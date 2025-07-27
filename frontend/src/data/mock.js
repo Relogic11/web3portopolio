@@ -149,27 +149,27 @@ export const experience = [
 export const testimonials = [
   {
     id: 1,
-    name: "Sarah Wijaya",
-    role: "Founder",
-    company: "EduTech Indonesia",
-    content: "Allen transformed our vision into reality! His e-learning platform exceeded our expectations. The attention to detail and smooth user experience helped us acquire 500+ students in just 3 months. Highly recommended!",
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face"
-  },
-  {
-    id: 2,
-    name: "Budi Santoso", 
-    role: "Restaurant Owner",
-    company: "Warung Nasi Budi",
-    content: "The POS system Allen built for my restaurant is amazing! Order processing is 40% faster now, and I can track everything from my phone. My staff loves how easy it is to use. Worth every rupiah!",
+    name: "Dr. Michael Chen",
+    role: "CTO",
+    company: "CryptoVault Capital",
+    content: "Allen's AI trading system revolutionized our operations! The autonomous bot generated 340% ROI and handled $2.3M in volume flawlessly. His expertise in machine learning and blockchain is unmatched. Best investment we ever made!",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
   },
   {
+    id: 2,
+    name: "Sarah Rodriguez", 
+    role: "Head of Innovation",
+    company: "SmartCity Jakarta",
+    content: "The IoT infrastructure Allen built transformed our city management! 200+ sensors providing real-time data, 30% traffic reduction, and predictive analytics that actually work. This is the future of smart cities!",
+    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face"
+  },
+  {
     id: 3,
-    name: "Lisa Putri",
-    role: "Property Manager", 
-    company: "Jakarta Property Solutions",
-    content: "Allen's property management dashboard saved our business! We can now manage 200+ properties efficiently. The automated reports and maintenance tracking features are game-changers. Professional work!",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face"
+    name: "David Kim",
+    role: "Founder & CEO", 
+    company: "SecureComm Technologies",
+    content: "Allen's quantum-safe messaging protocol is absolutely brilliant! Military-grade security handling 1M+ daily encrypted messages. His understanding of post-quantum cryptography is phenomenal. This will protect us for decades!",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face"
   }
 ];
 
