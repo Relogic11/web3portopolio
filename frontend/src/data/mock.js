@@ -60,7 +60,7 @@ export const projects = [
     bgColor: "dark-green", 
     textColor: "white",
     technologies: ["Solidity", "Zero-Knowledge", "IPFS", "Polygon", "React", "Node.js"],
-    timeline: "3 months",
+    timeline: "4 months",
     impact: "50K+ verified identities, 99.9% security uptime",
     details: "Developed a revolutionary identity platform using zk-SNARKs for privacy-preserving verification. Features include cross-chain identity portability, reputation scoring, and integration with major DeFi protocols.",
     clientType: "Blockchain Startup"
