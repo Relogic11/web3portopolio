@@ -162,7 +162,7 @@ export const projects = [
     description: "Point-of-sale system with inventory management, online ordering, and delivery tracking integration",
     categories: ["POS Systems", "Web Development", "Mobile App"],
     bgColor: "mid-orange",
-    textColor: "white",
+    textColor: "black",
     technologies: ["Laravel", "React Native", "MySQL", "Socket.io", "Payment Gateway"],
     timeline: "3 months",
     impact: "Reduced order processing time by 60%, integrated with GoFood/GrabFood",
