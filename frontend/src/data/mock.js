@@ -2,9 +2,9 @@
 
 export const personalInfo = {
   name: "Allen Elzayn",
-  title: "Freelance Developer & Systems Architect",
-  tagline: "Building Digital Solutions for Modern Businesses",
-  bio: "Freelance developer and systems architect with 5+ years of experience helping businesses build and scale their digital presence. I work with startups, agencies, and growing companies to create custom web applications, optimize system performance, and implement modern development solutions. Available for both short-term projects and long-term partnerships.",
+  title: "Full-Stack Developer & Tech Innovator",
+  tagline: "Building Tomorrow's Technology Today - AI, Blockchain, IoT & Beyond",
+  bio: "Cross-disciplinary technology innovator specializing in AI-powered applications, blockchain solutions, IoT systems, and advanced web technologies. 6+ years building cutting-edge solutions that merge multiple domains - from machine learning pipelines to decentralized applications, smart contracts to computer vision systems. Working with startups, enterprises, and visionary founders who want to push technological boundaries.",
   email: "allen.elzayn@email.com",
   phone: "+62 812-3456-7890",
   location: "Jakarta, Indonesia",
