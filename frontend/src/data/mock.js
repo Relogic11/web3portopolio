@@ -112,36 +112,36 @@ export const projects = [
 
 export const experience = [
   {
-    company: "Freelance Developer",
-    role: "Full Stack Developer & Systems Architect",
-    period: "2022 - Present",
+    company: "Independent Tech Innovator",
+    role: "Full-Stack Developer & AI Specialist",
+    period: "2021 - Present",
     location: "Jakarta, Indonesia",
     achievements: [
-      "Delivered 25+ successful projects for clients across various industries", 
-      "Maintained 98% client satisfaction rate with consistent 5-star reviews",
-      "Generated $150K+ in revenue through freelance development work"
+      "Delivered $650K+ worth of cutting-edge projects across AI, blockchain, and IoT domains", 
+      "Built systems processing $2.3M+ in daily trading volume and 50K+ user interactions",
+      "Pioneered quantum-safe cryptography implementation for enterprise security solutions"
     ]
   },
   {
-    company: "TechStart Solutions",
-    role: "Senior Developer", 
-    period: "2020 - 2022",
+    company: "TechVision Labs",
+    role: "Lead Developer & Research Engineer", 
+    period: "2019 - 2021",
     location: "Jakarta, Indonesia",
     achievements: [
-      "Led development of 10+ client projects from concept to deployment",
-      "Reduced average project delivery time by 30% through process optimization",
-      "Mentored 3 junior developers and established coding best practices"
+      "Led R&D team developing computer vision and IoT solutions for smart city projects",
+      "Published 3 research papers on edge AI optimization and real-time processing",
+      "Scaled systems from prototype to 100K+ concurrent users with 99.9% uptime"
     ]
   },
   {
-    company: "Digital Agency Indo",
-    role: "Web Developer",
-    period: "2019 - 2020", 
-    location: "Jakarta, Indonesia",
+    company: "Blockchain Dynamics",
+    role: "Smart Contract Developer",
+    period: "2018 - 2019", 
+    location: "Remote",
     achievements: [
-      "Built responsive websites and web applications for 20+ clients",
-      "Improved website performance by average of 60% through optimization",
-      "Collaborated with design team to deliver pixel-perfect implementations"
+      "Developed DeFi protocols handling $50M+ total value locked (TVL)",
+      "Audited and optimized smart contracts for zero-vulnerability deployment",
+      "Built cross-chain bridges connecting Ethereum, Polygon, and Binance Smart Chain"
     ]
   }
 ];
