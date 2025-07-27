@@ -99,7 +99,7 @@ export const projects = [
     bgColor: "mid-orange",
     textColor: "black",
     technologies: ["Go", "Post-Quantum Crypto", "libsodium", "WebRTC", "React Native"],
-    timeline: "2 months",
+    timeline: "5 months",
     impact: "Military-grade security, 1M+ encrypted messages daily",
     details: "Developed next-generation secure messaging using post-quantum cryptographic algorithms. Features include perfect forward secrecy, distributed key exchange, and quantum-resistant end-to-end encryption.",
     clientType: "Security Firm"
