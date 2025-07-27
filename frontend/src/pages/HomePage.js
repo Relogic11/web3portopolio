@@ -13,6 +13,7 @@ const HomePage = () => {
       <Navigation />
       <HeroSlider />
       <AboutSection />
+      <ServicesSection />
       <ProjectsGrid />
       <TestimonialsSection />
       <Footer />
