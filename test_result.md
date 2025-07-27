@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "User requested to check and delete testimonials section from the portfolio website, specifically asking to replace testimonials with something else and remove money-related statistics ($650K+ Project Value, etc.) that looked weird. Also mentioned that the About page was empty."
+user_problem_statement: "User requested to check and delete testimonials section from the portfolio website, specifically asking to replace testimonials with something else and remove money-related statistics ($650K+ Project Value, etc.) that looked weird. Also mentioned that the About page was empty. LATEST: User requested to shorten project timelines (were too long), add programming to technical expertise and remove (php/js), add IoT to tech skills, and remove team section (wants people to know he has team without showing explicitly)."
 
 frontend:
   - task: "Replace testimonials section with achievements section"
