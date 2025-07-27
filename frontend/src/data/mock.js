@@ -71,7 +71,7 @@ export const projects = [
     description: "Real-time defect detection for manufacturing using advanced computer vision and edge AI processing",
     categories: ["Computer Vision", "AI/ML", "Industrial IoT"],
     bgColor: "mid-purple",
-    textColor: "white",
+    textColor: "black",
     technologies: ["PyTorch", "OpenCV", "YOLO", "TensorRT", "MQTT", "React"],
     timeline: "3 months",
     impact: "98.7% accuracy, 60% reduction in manual inspection",
