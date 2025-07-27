@@ -141,6 +141,58 @@ export const projects = [
     impact: "95% accuracy in gesture recognition from neural signals",
     details: "Developed a complete BCI pipeline from raw neural signals to digital commands. Includes noise filtering, feature extraction, machine learning classification, and real-time feedback systems.",
     clientType: "Neurotechnology Lab"
+  },
+  {
+    id: 10,
+    title: "Multi-Store E-commerce Platform",
+    description: "Complete e-commerce solution with multi-vendor support, payment gateway integration, and admin dashboard",
+    categories: ["E-commerce", "Web Development", "Payment Systems"],
+    bgColor: "light-green",
+    textColor: "black",
+    technologies: ["Laravel", "MySQL", "Vue.js", "Midtrans", "Bootstrap", "jQuery"],
+    timeline: "4 months",
+    impact: "Supports 50+ vendors, processes 1000+ transactions daily",
+    details: "Built comprehensive e-commerce platform with vendor management, product catalog, order processing, payment integration (Midtrans, Bank Transfer), and real-time notifications. Includes admin panel and mobile-responsive design.",
+    clientType: "Local Business"
+  },
+  {
+    id: 11,
+    title: "Restaurant POS & Delivery System",
+    description: "Point-of-sale system with inventory management, online ordering, and delivery tracking integration",
+    categories: ["POS Systems", "Web Development", "Mobile App"],
+    bgColor: "mid-orange",
+    textColor: "white",
+    technologies: ["Laravel", "React Native", "MySQL", "Socket.io", "Payment Gateway"],
+    timeline: "3 months",
+    impact: "Reduced order processing time by 60%, integrated with GoFood/GrabFood",
+    details: "Developed complete restaurant management solution with POS terminal, inventory tracking, online menu, delivery integration, and real-time order notifications. Includes mobile app for customers and delivery tracking.",
+    clientType: "Restaurant Chain"
+  },
+  {
+    id: 12,
+    title: "Company Profile & CMS",
+    description: "Professional corporate website with content management system and SEO optimization",
+    categories: ["Web Development", "CMS", "SEO"],
+    bgColor: "dark-blue",
+    textColor: "white",
+    technologies: ["Laravel", "MySQL", "Bootstrap", "jQuery", "SEO Tools"],
+    timeline: "2 months",
+    impact: "Improved search ranking to page 1 Google, 200% increase in inquiries",
+    details: "Created professional company profile with custom CMS for easy content updates, blog system, contact forms, testimonials management, and comprehensive SEO optimization for Indonesian market.",
+    clientType: "Manufacturing Company"
+  },
+  {
+    id: 13,
+    title: "UMKM Mobile App & Dashboard",
+    description: "Mobile application for small business management with sales tracking and customer management",
+    categories: ["Mobile App", "Business Management", "Dashboard"],
+    bgColor: "light-purple",
+    textColor: "black",
+    technologies: ["React Native", "Laravel API", "MySQL", "Chart.js", "Push Notifications"],
+    timeline: "5 months",
+    impact: "Helps 200+ UMKM track sales, manage inventory and customers digitally",
+    details: "Developed mobile-first business management app for UMKM with sales recording, inventory management, customer database, financial reports, and promotional tools. Includes web dashboard for detailed analytics.",
+    clientType: "UMKM Network"
   }
 ];
 
