@@ -57,7 +57,7 @@ export const projects = [
     title: "Decentralized Identity Platform",
     description: "Blockchain-based identity verification system with zero-knowledge proofs and cross-chain compatibility",
     categories: ["Blockchain", "Cryptography", "DeFi"],
-    bgColor: "dark-green", 
+    bgColor: "white", 
     textColor: "black",
     technologies: ["Solidity", "Zero-Knowledge", "IPFS", "Polygon", "React", "Node.js"],
     timeline: "4 months",
