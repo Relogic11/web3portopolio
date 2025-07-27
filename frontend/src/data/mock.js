@@ -14,11 +14,13 @@ export const personalInfo = {
 };
 
 export const skills = [
-  { category: "Frontend Development", items: ["React", "Next.js", "Vue.js", "TypeScript", "Tailwind CSS"] },
-  { category: "Backend Development", items: ["Node.js", "Python", "PHP", "Express.js", "FastAPI"] },
-  { category: "Database & Storage", items: ["MySQL", "PostgreSQL", "MongoDB", "Firebase", "Redis"] },
-  { category: "Cloud & DevOps", items: ["AWS", "Digital Ocean", "Docker", "GitHub Actions", "Nginx"] },
-  { category: "Tools & Design", items: ["Figma", "Git", "VSCode", "Postman", "Slack"] }
+  { category: "AI & Machine Learning", items: ["TensorFlow", "PyTorch", "OpenAI GPT", "Computer Vision", "NLP", "LangChain"] },
+  { category: "Blockchain & Web3", items: ["Solidity", "Ethereum", "Polygon", "Web3.js", "DeFi", "Smart Contracts"] },
+  { category: "IoT & Hardware", items: ["Arduino", "Raspberry Pi", "MQTT", "LoRaWAN", "Edge Computing", "Sensors"] },
+  { category: "Advanced Frontend", items: ["React", "Next.js", "Three.js", "WebGL", "WebRTC", "PWA"] },
+  { category: "Backend & Infrastructure", items: ["Node.js", "Python", "Go", "Rust", "Kubernetes", "Microservices"] },
+  { category: "Data & Analytics", items: ["BigQuery", "Apache Kafka", "Redis", "Neo4j", "InfluxDB", "Grafana"] },
+  { category: "Cloud & DevOps", items: ["AWS", "GCP", "Docker", "Terraform", "CI/CD", "Monitoring"] }
 ];
 
 export const projects = [
