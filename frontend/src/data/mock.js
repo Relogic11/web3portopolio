@@ -46,7 +46,7 @@ export const projects = [
     bgColor: "mid-blue",
     textColor: "white", 
     technologies: ["Python", "LoRaWAN", "MQTT", "InfluxDB", "Grafana", "Edge AI"],
-    timeline: "4 months",
+    timeline: "2 months",
     impact: "30% traffic reduction, real-time environmental monitoring",
     details: "Designed and deployed city-wide IoT network with 200+ sensors for traffic flow, air quality, noise levels, and pedestrian density. Includes predictive analytics for traffic optimization and environmental alerts.",
     clientType: "Government Agency"
