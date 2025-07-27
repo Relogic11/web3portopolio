@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation';
 import HeroSlider from '../components/HeroSlider';
 import ProjectsGrid from '../components/ProjectsGrid';
 import AboutSection from '../components/AboutSection';
+import ServicesSection from '../components/ServicesSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import Footer from '../components/Footer';
 
