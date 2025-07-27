@@ -210,26 +210,22 @@ export const services = [
   {
     title: "AI & Machine Learning Solutions",
     description: "Custom AI models, computer vision systems, NLP applications, and intelligent automation",
-    icon: "Code",
-    price: "Starting from $25,000"
+    icon: "Code"
   },
   {
     title: "Blockchain & Web3 Development", 
     description: "Smart contracts, DeFi protocols, NFT platforms, and decentralized applications",
-    icon: "Smartphone",
-    price: "Starting from $30,000"
+    icon: "Smartphone"
   },
   {
     title: "IoT & Edge Computing Systems",
     description: "Connected device networks, sensor integration, real-time analytics, and edge AI deployment", 
-    icon: "ShoppingCart",
-    price: "Starting from $40,000"
+    icon: "ShoppingCart"
   },
   {
     title: "Advanced Web Technologies",
     description: "WebGL applications, real-time systems, AR/VR experiences, and high-performance web apps",
-    icon: "Settings",
-    price: "Starting from $20,000"
+    icon: "Settings"
   }
 ];
 
