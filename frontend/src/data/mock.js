@@ -58,7 +58,7 @@ export const projects = [
     description: "Blockchain-based identity verification system with zero-knowledge proofs and cross-chain compatibility",
     categories: ["Blockchain", "Cryptography", "DeFi"],
     bgColor: "dark-green", 
-    textColor: "white",
+    textColor: "black",
     technologies: ["Solidity", "Zero-Knowledge", "IPFS", "Polygon", "React", "Node.js"],
     timeline: "4 months",
     impact: "50K+ verified identities, 99.9% security uptime",
