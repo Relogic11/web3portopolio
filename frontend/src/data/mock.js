@@ -123,7 +123,7 @@ export const projects = [
     description: "High-performance computing cluster for real-time climate simulation and weather prediction",
     categories: ["HPC", "Scientific Computing", "Distributed Systems"],
     bgColor: "mid-blue",
-    textColor: "white",
+    textColor: "black",
     technologies: ["MPI", "CUDA", "Python", "Fortran", "Kubernetes", "HDF5"],
     timeline: "5 months", 
     impact: "Processes 1000+ climate variables in real-time",
