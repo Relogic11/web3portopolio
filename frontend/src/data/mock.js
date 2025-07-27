@@ -14,14 +14,14 @@ export const personalInfo = {
 };
 
 export const skills = [
+  { category: "Programming & Development", items: ["Python", "JavaScript", "PHP", "Go", "C++", "Java", "TypeScript"] },
   { category: "AI & Machine Learning", items: ["TensorFlow", "PyTorch", "OpenAI GPT", "Computer Vision", "NLP", "LangChain"] },
   { category: "Blockchain & Web3", items: ["Solidity", "Ethereum", "Polygon", "Web3.js", "DeFi", "Smart Contracts"] },
-  { category: "Web Development (PHP/JS)", items: ["Laravel", "CodeIgniter", "PHP", "MySQL", "jQuery", "Bootstrap", "Vue.js"] },
-  { category: "Modern Frontend", items: ["React", "Next.js", "Vue.js", "Angular", "Tailwind", "TypeScript"] },
-  { category: "Backend & Database", items: ["Node.js", "Python", "Laravel", "MySQL", "PostgreSQL", "MongoDB", "Redis"] },
+  { category: "Web Development", items: ["Laravel", "React", "Next.js", "Vue.js", "Angular", "Node.js", "FastAPI"] },
+  { category: "IoT & Hardware", items: ["Arduino", "Raspberry Pi", "LoRaWAN", "MQTT", "Edge Computing", "Sensor Networks"] },
   { category: "Mobile Development", items: ["React Native", "Flutter", "Ionic", "PWA", "Cordova"] },
-  { category: "E-commerce & Business", items: ["WooCommerce", "Shopify", "Payment Gateway", "POS Systems", "CRM", "ERP"] },
-  { category: "Cloud & DevOps", items: ["AWS", "GCP", "DigitalOcean", "cPanel", "Docker", "CI/CD"] }
+  { category: "Database & Backend", items: ["MySQL", "PostgreSQL", "MongoDB", "Redis", "Firebase", "GraphQL"] },
+  { category: "Cloud & DevOps", items: ["AWS", "GCP", "DigitalOcean", "Docker", "Kubernetes", "CI/CD"] }
 ];
 
 export const projects = [
