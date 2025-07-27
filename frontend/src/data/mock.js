@@ -196,6 +196,45 @@ export const projects = [
   }
 ];
 
+export const team = [
+  {
+    id: 1,
+    name: "Allen Elzayn",
+    role: "Tech Lead & Full-Stack Architect",
+    specialties: ["System Architecture", "Project Management", "Full-Stack Development"],
+    experience: "8+ years",
+    bio: "Technical leadership and end-to-end solution architecture. Bridges business requirements with technical implementation.",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+  },
+  {
+    id: 2,
+    name: "Sarah Chen",
+    role: "AI/ML Engineer",
+    specialties: ["Machine Learning", "Computer Vision", "Deep Learning"],
+    experience: "6+ years", 
+    bio: "Specialist in AI model development, training, and deployment. Expert in TensorFlow, PyTorch, and production ML systems.",
+    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face"
+  },
+  {
+    id: 3,
+    name: "David Rodriguez",
+    role: "Blockchain Developer",
+    specialties: ["Smart Contracts", "DeFi", "Web3 Integration"],
+    experience: "5+ years",
+    bio: "Expert in Solidity, Web3 development, and decentralized application architecture. Security-focused blockchain solutions.",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
+  },
+  {
+    id: 4,
+    name: "Lisa Wang",
+    role: "Mobile & IoT Specialist", 
+    specialties: ["React Native", "Flutter", "IoT Systems"],
+    experience: "4+ years",
+    bio: "Cross-platform mobile development and IoT integration specialist. Creates seamless user experiences across all devices.",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face"
+  }
+];
+
 export const experience = [
   {
     company: "Independent Tech Innovator",
