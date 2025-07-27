@@ -135,7 +135,7 @@ const AboutSection = () => {
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-black text-white font-mono uppercase text-sm tracking-wider rounded-full hover:bg-gray-800 transition-colors duration-200"
             >
-              Let's Build Something Amazing
+              Hire Me for Your Project
             </motion.button>
           </motion.div>
         </motion.div>
