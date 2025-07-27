@@ -136,7 +136,7 @@ export const projects = [
     description: "Real-time neural signal processing system for controlling digital interfaces with thought patterns",
     categories: ["Neurotechnology", "Signal Processing", "Real-time Systems"], 
     bgColor: "dark-green",
-    textColor: "white",
+    textColor: "black",
     technologies: ["Python", "NumPy", "SciPy", "Real-time DSP", "C++", "Qt"],
     timeline: "6 months",
     impact: "95% accuracy in gesture recognition from neural signals",
