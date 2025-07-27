@@ -33,10 +33,9 @@ export const projects = [
     textColor: "black",
     technologies: ["Python", "TensorFlow", "Web3.py", "Redis", "WebSocket", "AWS"],
     timeline: "8 months",
-    impact: "$2.3M+ in trading volume, 340% ROI for clients",
+    impact: "Handles massive trading volume with 340% improved performance",
     details: "Built an intelligent trading ecosystem that combines machine learning prediction models with blockchain execution. Features include sentiment analysis, technical indicators ML, cross-exchange arbitrage, and autonomous position management.",
-    clientType: "Crypto Fund",
-    projectValue: "$85,000"
+    clientType: "Crypto Fund"
   },
   {
     id: 2,
@@ -49,8 +48,7 @@ export const projects = [
     timeline: "12 months",
     impact: "30% traffic reduction, real-time environmental monitoring",
     details: "Designed and deployed city-wide IoT network with 200+ sensors for traffic flow, air quality, noise levels, and pedestrian density. Includes predictive analytics for traffic optimization and environmental alerts.",
-    clientType: "Government Agency",
-    projectValue: "$120,000"
+    clientType: "Government Agency"
   },
   {
     id: 3,
@@ -63,8 +61,7 @@ export const projects = [
     timeline: "10 months",
     impact: "50K+ verified identities, 99.9% security uptime",
     details: "Developed a revolutionary identity platform using zk-SNARKs for privacy-preserving verification. Features include cross-chain identity portability, reputation scoring, and integration with major DeFi protocols.",
-    clientType: "Blockchain Startup",
-    projectValue: "$95,000"
+    clientType: "Blockchain Startup"
   },
   {
     id: 4,
@@ -77,8 +74,7 @@ export const projects = [
     timeline: "6 months",
     impact: "98.7% accuracy, 60% reduction in manual inspection",
     details: "Built an automated quality control system using state-of-the-art computer vision models. Deployed on edge devices for real-time processing with sub-100ms detection latency and automated reporting.",
-    clientType: "Manufacturing Company",
-    projectValue: "$75,000"
+    clientType: "Manufacturing Company"
   },
   {
     id: 5,
@@ -91,8 +87,7 @@ export const projects = [
     timeline: "9 months",
     impact: "10K+ concurrent users, used by 50+ remote teams",
     details: "Created a browser-based AR collaboration platform where teams can manipulate 3D objects in real-time, with spatial audio, screen sharing, and persistent virtual workspaces. No app installation required.",
-    clientType: "Tech Startup",
-    projectValue: "$110,000"
+    clientType: "Tech Startup"
   },
   {
     id: 6,
@@ -105,8 +100,46 @@ export const projects = [
     timeline: "14 months",
     impact: "Military-grade security, 1M+ encrypted messages daily",
     details: "Developed next-generation secure messaging using post-quantum cryptographic algorithms. Features include perfect forward secrecy, distributed key exchange, and quantum-resistant end-to-end encryption.",
-    clientType: "Security Firm",
-    projectValue: "$150,000"
+    clientType: "Security Firm"
+  },
+  {
+    id: 7,
+    title: "Neural Network Chip Optimizer",
+    description: "Hardware-software co-design system for optimizing neural network inference on custom silicon",
+    categories: ["Hardware Design", "AI/ML", "Low-level Programming"],
+    bgColor: "light-pink",
+    textColor: "black", 
+    technologies: ["CUDA", "Verilog", "C++", "TensorRT", "OpenCL", "Python"],
+    timeline: "16 months",
+    impact: "10x performance improvement over standard GPUs",
+    details: "Designed custom neural processing units with optimized instruction sets for transformer architectures. Includes compiler toolchain, hardware simulator, and automated design space exploration.",
+    clientType: "Semiconductor Startup"
+  },
+  {
+    id: 8,
+    title: "Distributed Climate Modeling System",
+    description: "High-performance computing cluster for real-time climate simulation and weather prediction",
+    categories: ["HPC", "Scientific Computing", "Distributed Systems"],
+    bgColor: "mid-blue",
+    textColor: "white",
+    technologies: ["MPI", "CUDA", "Python", "Fortran", "Kubernetes", "HDF5"],
+    timeline: "18 months", 
+    impact: "Processes 1000+ climate variables in real-time",
+    details: "Built a distributed computing system that simulates global climate patterns with unprecedented accuracy. Features include GPU-accelerated numerical solvers, real-time visualization, and predictive modeling.",
+    clientType: "Research Institute"
+  },
+  {
+    id: 9,
+    title: "Brain-Computer Interface Framework",
+    description: "Real-time neural signal processing system for controlling digital interfaces with thought patterns",
+    categories: ["Neurotechnology", "Signal Processing", "Real-time Systems"], 
+    bgColor: "dark-green",
+    textColor: "white",
+    technologies: ["Python", "NumPy", "SciPy", "Real-time DSP", "C++", "Qt"],
+    timeline: "20 months",
+    impact: "95% accuracy in gesture recognition from neural signals",
+    details: "Developed a complete BCI pipeline from raw neural signals to digital commands. Includes noise filtering, feature extraction, machine learning classification, and real-time feedback systems.",
+    clientType: "Neurotechnology Lab"
   }
 ];
 
