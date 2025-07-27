@@ -14,7 +14,7 @@ const TestimonialsSection = () => {
       icon: <Code size={40} />,
       title: "Innovation Focus", 
       description: "Built revolutionary systems from AI trading bots to quantum-safe messaging",
-      highlight: "50+ Projects Completed"
+      highlight: "100+ Projects Completed"
     },
     {
       icon: <Zap size={40} />,
