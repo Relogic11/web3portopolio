@@ -150,9 +150,9 @@ export const experience = [
     period: "2021 - Present",
     location: "Jakarta, Indonesia",
     achievements: [
-      "Delivered $650K+ worth of cutting-edge projects across AI, blockchain, and IoT domains", 
-      "Built systems processing $2.3M+ in daily trading volume and 50K+ user interactions",
-      "Pioneered quantum-safe cryptography implementation for enterprise security solutions"
+      "Built cutting-edge systems across AI, blockchain, and IoT domains for enterprise clients", 
+      "Developed systems processing massive data volumes with 99.9% uptime and reliability",
+      "Pioneered quantum-safe cryptography and brain-computer interface technologies"
     ]
   },
   {
@@ -169,12 +169,23 @@ export const experience = [
   {
     company: "Blockchain Dynamics",
     role: "Smart Contract Developer",
-    period: "2018 - 2019", 
+    period: "2017 - 2019", 
     location: "Remote",
     achievements: [
-      "Developed DeFi protocols handling $50M+ total value locked (TVL)",
+      "Developed DeFi protocols with advanced security and cross-chain compatibility",
       "Audited and optimized smart contracts for zero-vulnerability deployment",
-      "Built cross-chain bridges connecting Ethereum, Polygon, and Binance Smart Chain"
+      "Built cross-chain bridges connecting multiple blockchain networks"
+    ]
+  },
+  {
+    company: "Early Programming Journey",
+    role: "Self-Taught Developer",
+    period: "2016 - 2017 (Started coding at age 9)", 
+    location: "Jakarta, Indonesia",
+    achievements: [
+      "Started programming at age 9, mastering multiple languages and frameworks",
+      "Built first neural network implementation at age 12 using Python and NumPy",
+      "Won national programming competitions and hackathons throughout school years"
     ]
   }
 ];
