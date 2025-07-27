@@ -150,7 +150,7 @@ export const projects = [
     bgColor: "light-green",
     textColor: "black",
     technologies: ["Laravel", "MySQL", "Vue.js", "Midtrans", "Bootstrap", "jQuery"],
-    timeline: "4 months",
+    timeline: "2 months",
     impact: "Supports 50+ vendors, processes 1000+ transactions daily",
     details: "Built comprehensive e-commerce platform with vendor management, product catalog, order processing, payment integration (Midtrans, Bank Transfer), and real-time notifications. Includes admin panel and mobile-responsive design.",
     clientType: "Local Business"
