@@ -175,28 +175,28 @@ export const testimonials = [
 
 export const services = [
   {
-    title: "Web Development",
-    description: "Custom websites and web applications built with modern technologies",
+    title: "AI & Machine Learning Solutions",
+    description: "Custom AI models, computer vision systems, NLP applications, and intelligent automation",
     icon: "Code",
-    price: "Starting from $2,000"
+    price: "Starting from $25,000"
   },
   {
-    title: "Mobile App Development", 
-    description: "Cross-platform mobile applications for iOS and Android",
+    title: "Blockchain & Web3 Development", 
+    description: "Smart contracts, DeFi protocols, NFT platforms, and decentralized applications",
     icon: "Smartphone",
-    price: "Starting from $5,000"
+    price: "Starting from $30,000"
   },
   {
-    title: "E-Commerce Solutions",
-    description: "Complete online stores with payment integration and admin panels", 
+    title: "IoT & Edge Computing Systems",
+    description: "Connected device networks, sensor integration, real-time analytics, and edge AI deployment", 
     icon: "ShoppingCart",
-    price: "Starting from $3,500"
+    price: "Starting from $40,000"
   },
   {
-    title: "System Architecture & Consulting",
-    description: "Technical consulting and system architecture planning for scalable solutions",
+    title: "Advanced Web Technologies",
+    description: "WebGL applications, real-time systems, AR/VR experiences, and high-performance web apps",
     icon: "Settings",
-    price: "Starting from $150/hour"
+    price: "Starting from $20,000"
   }
 ];
 
