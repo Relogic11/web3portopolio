@@ -189,7 +189,7 @@ export const projects = [
     bgColor: "light-purple",
     textColor: "black",
     technologies: ["React Native", "Laravel API", "MySQL", "Chart.js", "Push Notifications"],
-    timeline: "5 months",
+    timeline: "1 month",
     impact: "Helps 200+ UMKM track sales, manage inventory and customers digitally",
     details: "Developed mobile-first business management app for UMKM with sales recording, inventory management, customer database, financial reports, and promotional tools. Includes web dashboard for detailed analytics.",
     clientType: "UMKM Network"
