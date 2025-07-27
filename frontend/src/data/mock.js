@@ -2,12 +2,12 @@
 
 export const personalInfo = {
   name: "Allen Elzayn",
-  title: "Systems Architect",
-  tagline: "Architecting Tomorrow's Digital Infrastructure",
-  bio: "Passionate systems architect with 8+ years of experience designing scalable, resilient, and innovative technology solutions. I specialize in cloud architecture, microservices design, and enterprise-scale system optimization. My approach combines technical excellence with strategic thinking to build systems that not only meet today's needs but anticipate tomorrow's challenges.",
+  title: "Freelance Developer & Systems Architect",
+  tagline: "Building Digital Solutions for Modern Businesses",
+  bio: "Freelance developer and systems architect with 5+ years of experience helping businesses build and scale their digital presence. I work with startups, agencies, and growing companies to create custom web applications, optimize system performance, and implement modern development solutions. Available for both short-term projects and long-term partnerships.",
   email: "allen.elzayn@email.com",
-  phone: "+1 (555) 123-4567",
-  location: "San Francisco, CA",
+  phone: "+62 812-3456-7890",
+  location: "Jakarta, Indonesia",
   linkedin: "https://linkedin.com/in/allenelzayn",
   github: "https://github.com/allenelzayn",
   website: "https://allenelzayn.dev"
