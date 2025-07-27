@@ -151,7 +151,7 @@ const ServicesSection = () => {
                 Ready to Start Your Project?
               </h3>
               <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                Let's discuss your breakthrough idea and build something that pushes technological boundaries. Enterprise-grade solutions starting at $20,000.
+                Let's discuss your breakthrough idea and build something that pushes technological boundaries together.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <motion.button
