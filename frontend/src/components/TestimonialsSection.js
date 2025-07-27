@@ -1,34 +1,43 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { testimonials } from '../data/mock';
-import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Award, Code, Zap, Users, Target, Star } from 'lucide-react';
 
 const TestimonialsSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const achievements = [
+    {
+      icon: <Award size={40} />,
+      title: "Technical Excellence",
+      description: "Specialized in cutting-edge technologies like AI, blockchain, and IoT systems",
+      highlight: "8+ Years Experience"
+    },
+    {
+      icon: <Code size={40} />,
+      title: "Innovation Focus", 
+      description: "Built revolutionary systems from AI trading bots to quantum-safe messaging",
+      highlight: "50+ Projects Completed"
+    },
+    {
+      icon: <Zap size={40} />,
+      title: "Performance Driven",
+      description: "Delivered high-performance solutions with optimal efficiency and reliability",
+      highlight: "Industry Leading Results"
+    }
+  ];
 
-  const nextTestimonial = () => {
-    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const prevTestimonial = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
-
-  const goToTestimonial = (index) => {
-    setCurrentIndex(index);
-  };
-
-  const current = testimonials[currentIndex];
+  const skills = [
+    "Artificial Intelligence", "Blockchain Development", "IoT Systems", 
+    "Computer Vision", "Distributed Systems", "Cloud Architecture"
+  ];
 
   return (
     <section className="py-24 bg-gray-50 relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 left-10 text-[20rem] font-display font-bold text-black">
-          "
+          ★
         </div>
-        <div className="absolute bottom-1/4 right-10 text-[20rem] font-display font-bold text-black rotate-180">
-          "
+        <div className="absolute bottom-1/4 right-10 text-[20rem] font-display font-bold text-black">
+          ⚡
         </div>
       </div>
 
@@ -42,103 +51,82 @@ const TestimonialsSection = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-5xl lg:text-7xl font-display font-bold text-black mb-6">
-              Client Testimonials
+              Why Choose Me
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              What industry leaders say about working with me
+              Passionate developer with proven expertise in breakthrough technologies
             </p>
             <div className="w-24 h-1 bg-black mx-auto mt-6"></div>
           </div>
 
-          {/* Testimonial Display */}
-          <div className="max-w-4xl mx-auto">
-            <div className="relative bg-white rounded-2xl shadow-xl p-8 lg:p-12">
-              {/* Quote Icon */}
-              <div className="absolute top-8 left-8 text-gray-200">
-                <Quote size={48} />
-              </div>
-
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={currentIndex}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.4 }}
-                  className="relative z-10"
-                >
-                  {/* Testimonial Content */}
-                  <div className="mb-8">
-                    <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed mb-6 font-light italic">
-                      {current.content}
-                    </p>
-                  </div>
-
-                  {/* Author Info */}
-                  <div className="flex items-center">
-                    <div className="w-16 h-16 rounded-full overflow-hidden mr-4 border-2 border-gray-200">
-                      <img
-                        src={current.avatar}
-                        alt={current.name}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-bold text-black">
-                        {current.name}
-                      </h4>
-                      <p className="text-gray-600 text-sm">
-                        {current.role}
-                      </p>
-                      <p className="text-gray-500 text-xs font-mono uppercase">
-                        {current.company}
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
-
-              {/* Navigation */}
-              <div className="flex items-center justify-between mt-8">
-                <button
-                  onClick={prevTestimonial}
-                  className="p-3 rounded-full bg-gray-100 hover:bg-gray-200 text-black transition-colors duration-200"
-                  aria-label="Previous testimonial"
-                >
-                  <ChevronLeft size={20} />
-                </button>
-
-                {/* Dots Indicator */}
-                <div className="flex space-x-2">
-                  {testimonials.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => goToTestimonial(index)}
-                      className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                        index === currentIndex ? 'bg-black' : 'bg-gray-300'
-                      }`}
-                      aria-label={`Go to testimonial ${index + 1}`}
-                    />
-                  ))}
+          {/* Achievement Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {achievements.map((achievement, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              >
+                <div className="text-black mb-6 flex justify-center">
+                  {achievement.icon}
                 </div>
-
-                <button
-                  onClick={nextTestimonial}
-                  className="p-3 rounded-full bg-gray-100 hover:bg-gray-200 text-black transition-colors duration-200"
-                  aria-label="Next testimonial"
-                >
-                  <ChevronRight size={20} />
-                </button>
-              </div>
-            </div>
+                <h3 className="text-2xl font-bold text-black mb-4 text-center">
+                  {achievement.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-4 text-center">
+                  {achievement.description}
+                </p>
+                <div className="text-center">
+                  <span className="inline-block px-4 py-2 bg-black text-white text-sm font-mono uppercase rounded-full">
+                    {achievement.highlight}
+                  </span>
+                </div>
+              </motion.div>
+            ))}
           </div>
 
-          {/* Stats Section */}
+          {/* Skills Showcase */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-white rounded-2xl shadow-xl p-8 lg:p-12"
+          >
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-black mb-4">
+                Core Expertise
+              </h3>
+              <p className="text-gray-600">
+                Technologies I specialize in to build innovative solutions
+              </p>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-4">
+              {skills.map((skill, index) => (
+                <motion.span
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  className="px-6 py-3 bg-gray-100 text-gray-800 rounded-full border-2 border-transparent hover:border-black hover:bg-black hover:text-white transition-all duration-300 cursor-pointer text-sm font-medium"
+                >
+                  {skill}
+                </motion.span>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Achievement Stats - Without Money */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 text-center">
             {[
-              { number: '$650K+', label: 'Project Value' },
-              { number: '99.9%', label: 'System Uptime' },
-              { number: '2.3M+', label: 'Daily Volume' }
+              { number: '8+', label: 'Years Experience' },
+              { number: '50+', label: 'Projects Completed' },
+              { number: '100%', label: 'Client Satisfaction' }
             ].map((stat, index) => (
               <motion.div
                 key={index}
@@ -146,7 +134,7 @@ const TestimonialsSection = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-lg p-6 shadow-lg"
+                className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="text-4xl font-bold text-black mb-2">
                   {stat.number}
