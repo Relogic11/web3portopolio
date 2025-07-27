@@ -83,7 +83,7 @@ export const projects = [
     title: "Real-time Collaborative AR Platform",
     description: "WebRTC-based augmented reality platform for remote collaboration with 3D object manipulation and voice chat",
     categories: ["AR/VR", "Real-time Systems", "WebRTC"],
-    bgColor: "light-yellow",
+    bgColor: "white",
     textColor: "black",
     technologies: ["Three.js", "WebRTC", "WebGL", "Socket.io", "React", "Node.js"],
     timeline: "4 months",
