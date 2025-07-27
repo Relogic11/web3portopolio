@@ -125,7 +125,7 @@ export const projects = [
     bgColor: "mid-blue",
     textColor: "white",
     technologies: ["MPI", "CUDA", "Python", "Fortran", "Kubernetes", "HDF5"],
-    timeline: "1 month", 
+    timeline: "5 months", 
     impact: "Processes 1000+ climate variables in real-time",
     details: "Built a distributed computing system that simulates global climate patterns with unprecedented accuracy. Features include GPU-accelerated numerical solvers, real-time visualization, and predictive modeling.",
     clientType: "Research Institute"
