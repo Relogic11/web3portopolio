@@ -14,11 +14,11 @@ export const personalInfo = {
 };
 
 export const skills = [
-  { category: "Cloud Platforms", items: ["AWS", "Azure", "Google Cloud", "Kubernetes", "Docker"] },
-  { category: "Architecture Patterns", items: ["Microservices", "Event-Driven", "CQRS", "Domain-Driven Design", "Serverless"] },
-  { category: "Programming Languages", items: ["Python", "Java", "Go", "TypeScript", "Rust"] },
-  { category: "Data & Storage", items: ["PostgreSQL", "MongoDB", "Redis", "Elasticsearch", "Apache Kafka"] },
-  { category: "DevOps & Tools", items: ["Terraform", "Jenkins", "GitLab CI", "Prometheus", "Grafana"] }
+  { category: "Frontend Development", items: ["React", "Next.js", "Vue.js", "TypeScript", "Tailwind CSS"] },
+  { category: "Backend Development", items: ["Node.js", "Python", "PHP", "Express.js", "FastAPI"] },
+  { category: "Database & Storage", items: ["MySQL", "PostgreSQL", "MongoDB", "Firebase", "Redis"] },
+  { category: "Cloud & DevOps", items: ["AWS", "Digital Ocean", "Docker", "GitHub Actions", "Nginx"] },
+  { category: "Tools & Design", items: ["Figma", "Git", "VSCode", "Postman", "Slack"] }
 ];
 
 export const projects = [
