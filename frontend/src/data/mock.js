@@ -194,6 +194,97 @@ export const projects = [
     impact: "Helps 200+ UMKM track sales, manage inventory and customers digitally",
     details: "Developed mobile-first business management app for UMKM with sales recording, inventory management, customer database, financial reports, and promotional tools. Includes web dashboard for detailed analytics.",
     clientType: "UMKM Network"
+  },
+  {
+    id: 14,
+    title: "Solana DeFi Protocol & DEX",
+    description: "Decentralized exchange and liquidity farming protocol built on Solana with high-speed transactions",
+    categories: ["DeFi", "Solana", "Blockchain"],
+    bgColor: "dark-purple",
+    textColor: "white",
+    technologies: ["Rust", "Anchor Framework", "Solana", "React", "TypeScript", "Web3.js"],
+    timeline: "3 months",
+    impact: "$2M+ TVL, 50K+ daily transactions, 5000+ active users",
+    details: "Built complete DeFi ecosystem on Solana featuring automated market maker, yield farming, staking pools, and governance token. Ultra-fast transactions with minimal fees leveraging Solana's performance.",
+    clientType: "DeFi Startup"
+  },
+  {
+    id: 15,
+    title: "Real-time Chat App with AI Assistant",
+    description: "Modern chat application with AI-powered responses, file sharing, and end-to-end encryption",
+    categories: ["Web App", "AI Integration", "Real-time"],
+    bgColor: "light-blue",
+    textColor: "black",
+    technologies: ["Next.js", "Socket.io", "OpenAI GPT", "PostgreSQL", "Redis", "Tailwind"],
+    timeline: "2 months",
+    impact: "10K+ active users, 500K+ messages processed daily",
+    details: "Created modern chat platform with AI assistant integration, real-time messaging, file sharing, voice messages, and end-to-end encryption. Features smart notifications and message analytics.",
+    clientType: "Tech Startup"
+  },
+  {
+    id: 16,
+    title: "Desktop App with Tauri & Rust",
+    description: "Cross-platform desktop application for file management with system integration and performance optimization",
+    categories: ["Desktop App", "Rust", "System Programming"],
+    bgColor: "mid-red",
+    textColor: "white",
+    technologies: ["Rust", "Tauri", "React", "TypeScript", "SQLite", "System APIs"],
+    timeline: "2 months",
+    impact: "50% faster than Electron alternatives, 80% less memory usage",
+    details: "Built high-performance desktop app using Tauri and Rust backend. Features include advanced file operations, system tray integration, auto-updates, and native OS interactions with minimal resource footprint.",
+    clientType: "Software Company"
+  },
+  {
+    id: 17,
+    title: "AI-Powered Code Review Platform",
+    description: "Automated code analysis and review system using machine learning for bug detection and code optimization",
+    categories: ["AI/ML", "Developer Tools", "Code Analysis"],
+    bgColor: "dark-orange",
+    textColor: "white",
+    technologies: ["Python", "FastAPI", "Hugging Face", "Docker", "PostgreSQL", "React"],
+    timeline: "3 months",
+    impact: "95% bug detection accuracy, used by 100+ development teams",
+    details: "Developed AI-powered platform that analyzes code commits, detects potential bugs, suggests optimizations, and provides automated code reviews. Integrates with GitHub/GitLab workflows.",
+    clientType: "Enterprise"
+  },
+  {
+    id: 18,
+    title: "Microservices E-commerce with Kafka",
+    description: "Scalable e-commerce platform using microservices architecture with event-driven communication",
+    categories: ["Microservices", "E-commerce", "Event Streaming"],
+    bgColor: "mid-green",
+    textColor: "white",
+    technologies: ["Node.js", "Kafka", "Docker", "Kubernetes", "MongoDB", "Redis", "Next.js"],
+    timeline: "4 months",
+    impact: "Handles 100K+ concurrent users, 99.9% uptime",
+    details: "Architected scalable e-commerce platform with microservices for user management, inventory, payments, and notifications. Event-driven architecture ensures data consistency and real-time updates.",
+    clientType: "E-commerce Giant"
+  },
+  {
+    id: 19,
+    title: "Flutter Fitness Tracking App",
+    description: "Cross-platform fitness app with workout tracking, nutrition monitoring, and social features",
+    categories: ["Mobile App", "Health Tech", "Social Platform"],
+    bgColor: "light-orange",
+    textColor: "black",
+    technologies: ["Flutter", "Dart", "Firebase", "Google Fit API", "Supabase", "Stripe"],
+    timeline: "3 months",
+    impact: "50K+ downloads, 4.8★ app store rating, 10K+ active users",
+    details: "Created comprehensive fitness app with workout plans, progress tracking, nutrition logging, social challenges, and premium subscription features. Integrates with wearable devices and health platforms.",
+    clientType: "Health Startup"
+  },
+  {
+    id: 20,
+    title: "Real-time Analytics Dashboard",
+    description: "High-performance analytics platform for processing millions of events with real-time visualizations",
+    categories: ["Analytics", "Big Data", "Visualization"],
+    bgColor: "dark-blue",
+    textColor: "white",
+    technologies: ["Python", "ClickHouse", "Apache Kafka", "React", "D3.js", "WebSocket"],
+    timeline: "3 months",
+    impact: "Processes 10M+ events/day, sub-second query response",
+    details: "Built real-time analytics platform that ingests massive data streams, processes events in real-time, and provides interactive dashboards with custom visualizations and alerting systems.",
+    clientType: "Data Company"
   }
 ];
 
