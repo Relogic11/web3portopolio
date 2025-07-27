@@ -279,7 +279,7 @@ export const projects = [
     description: "High-performance analytics platform for processing millions of events with real-time visualizations",
     categories: ["Analytics", "Big Data", "Visualization"],
     bgColor: "dark-blue",
-    textColor: "white",
+    textColor: "black",
     technologies: ["Python", "ClickHouse", "Apache Kafka", "React", "D3.js", "WebSocket"],
     timeline: "3 months",
     impact: "Processes 10M+ events/day, sub-second query response",
