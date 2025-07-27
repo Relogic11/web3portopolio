@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { personalInfo, experience, skills } from '../data/mock';
-import { Calendar, MapPin, Briefcase, Award, Users } from 'lucide-react';
+import { Calendar, MapPin, Briefcase, Award } from 'lucide-react';
 
 const AboutPage = () => {
   const containerVariants = {
