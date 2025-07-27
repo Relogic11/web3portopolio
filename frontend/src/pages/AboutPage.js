@@ -58,18 +58,12 @@ const AboutPage = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-20">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 lg:px-8">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            className="max-w-6xl mx-auto"
-          >
+          <div className="max-w-6xl mx-auto">
             {/* Biography Section */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
-              <motion.div variants={itemVariants} className="space-y-6">
+              <div className="space-y-6">
                 <h2 className="text-4xl font-display font-bold text-black mb-8">
                   My Story
                 </h2>
@@ -94,18 +88,17 @@ const AboutPage = () => {
                     <span>8+ Years Experience</span>
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div variants={itemVariants} className="space-y-6">
+              <div className="space-y-6">
                 <h2 className="text-4xl font-display font-bold text-black mb-8">
                   Expertise Areas
                 </h2>
                 
                 <div className="space-y-6">
                   {skills.map((skillGroup, index) => (
-                    <motion.div
+                    <div
                       key={index}
-                      variants={itemVariants}
                       className="border-l-4 border-black pl-6"
                     >
                       <h3 className="text-lg font-bold text-black mb-3">
@@ -121,23 +114,22 @@ const AboutPage = () => {
                           </span>
                         ))}
                       </div>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             </div>
 
             {/* Experience Timeline */}
-            <motion.div variants={itemVariants} className="mb-20">
+            <div className="mb-20">
               <h2 className="text-4xl font-display font-bold text-black text-center mb-12">
                 Professional Journey
               </h2>
 
               <div className="space-y-8">
                 {experience.map((job, index) => (
-                  <motion.div
+                  <div
                     key={index}
-                    variants={itemVariants}
                     className="relative bg-white border border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
                   >
                     <div className="absolute top-8 right-8 text-gray-400">
@@ -179,31 +171,24 @@ const AboutPage = () => {
                         </ul>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
             {/* Call to Action */}
-            <motion.div 
-              variants={itemVariants}
-              className="text-center bg-black text-white rounded-3xl p-12"
-            >
+            <div className="text-center bg-black text-white rounded-3xl p-12">
               <h2 className="text-3xl font-display font-bold mb-6">
                 Ready to Build Something Amazing?
               </h2>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
                 Let's discuss how we can architect your next breakthrough solution together.
               </p>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-white text-black font-mono uppercase text-sm tracking-wider rounded-full hover:bg-gray-200 transition-colors duration-200"
-              >
+              <button className="px-8 py-4 bg-white text-black font-mono uppercase text-sm tracking-wider rounded-full hover:bg-gray-200 transition-colors duration-200">
                 Get In Touch
-              </motion.button>
-            </motion.div>
-          </motion.div>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -211,5 +196,7 @@ const AboutPage = () => {
     </div>
   );
 };
+
+export default AboutPage;
 
 export default AboutPage;
