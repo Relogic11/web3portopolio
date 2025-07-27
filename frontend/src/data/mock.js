@@ -86,7 +86,7 @@ export const projects = [
     bgColor: "light-yellow",
     textColor: "black",
     technologies: ["Three.js", "WebRTC", "WebGL", "Socket.io", "React", "Node.js"],
-    timeline: "3 months",
+    timeline: "4 months",
     impact: "10K+ concurrent users, used by 50+ remote teams",
     details: "Created a browser-based AR collaboration platform where teams can manipulate 3D objects in real-time, with spatial audio, screen sharing, and persistent virtual workspaces. No app installation required.",
     clientType: "Tech Startup"
