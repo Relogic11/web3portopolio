@@ -110,36 +110,36 @@ export const projects = [
 
 export const experience = [
   {
-    company: "TechCorp Inc.",
-    role: "Senior Systems Architect",
+    company: "Freelance Developer",
+    role: "Full Stack Developer & Systems Architect",
     period: "2022 - Present",
-    location: "San Francisco, CA",
+    location: "Jakarta, Indonesia",
     achievements: [
-      "Led architecture design for $10M+ cloud transformation initiative",
-      "Reduced system complexity by 60% through microservices adoption", 
-      "Mentored team of 15+ engineers across multiple domains"
+      "Delivered 25+ successful projects for clients across various industries", 
+      "Maintained 98% client satisfaction rate with consistent 5-star reviews",
+      "Generated $150K+ in revenue through freelance development work"
     ]
   },
   {
-    company: "CloudVision Solutions",
-    role: "Solutions Architect", 
-    period: "2019 - 2022",
-    location: "Seattle, WA",
+    company: "TechStart Solutions",
+    role: "Senior Developer", 
+    period: "2020 - 2022",
+    location: "Jakarta, Indonesia",
     achievements: [
-      "Designed cloud-native architectures for 50+ enterprise clients",
-      "Achieved 99.95% average uptime across all managed systems",
-      "Pioneered DevOps practices reducing deployment time by 80%"
+      "Led development of 10+ client projects from concept to deployment",
+      "Reduced average project delivery time by 30% through process optimization",
+      "Mentored 3 junior developers and established coding best practices"
     ]
   },
   {
-    company: "DataFlow Systems",
-    role: "Software Architect",
-    period: "2016 - 2019", 
-    location: "Austin, TX",
+    company: "Digital Agency Indo",
+    role: "Web Developer",
+    period: "2019 - 2020", 
+    location: "Jakarta, Indonesia",
     achievements: [
-      "Built distributed data processing platform handling 100TB+ daily",
-      "Implemented event-driven architecture improving system resilience",
-      "Led technical due diligence for $50M acquisition"
+      "Built responsive websites and web applications for 20+ clients",
+      "Improved website performance by average of 60% through optimization",
+      "Collaborated with design team to deliver pixel-perfect implementations"
     ]
   }
 ];
