@@ -253,7 +253,7 @@ export const projects = [
     description: "Scalable e-commerce platform using microservices architecture with event-driven communication",
     categories: ["Microservices", "E-commerce", "Event Streaming"],
     bgColor: "mid-green",
-    textColor: "white",
+    textColor: "black",
     technologies: ["Node.js", "Kafka", "Docker", "Kubernetes", "MongoDB", "Redis", "Next.js"],
     timeline: "4 months",
     impact: "Handles 100K+ concurrent users, 99.9% uptime",
