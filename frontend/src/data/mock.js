@@ -2,9 +2,9 @@
 
 export const personalInfo = {
   name: "Allen Elzayn",
-  title: "Full-Stack Developer & Tech Innovator",
+  title: "Full-Stack Developer & Tech Team Lead",
   tagline: "Building Tomorrow's Technology Today - From AI & Blockchain to E-commerce & UMKM Solutions",
-  bio: "Cross-disciplinary technology innovator with 8+ years of experience building solutions from cutting-edge AI and blockchain systems to practical e-commerce and business management platforms. Started coding at age 9 and have been bridging the gap between advanced technology and real-world business needs. Specializing in both high-end international projects (AI, blockchain, IoT) and practical Indonesian market solutions (e-commerce, POS systems, UMKM apps). Working with startups, enterprises, local businesses, and visionary founders who want to leverage technology for growth.",
+  bio: "Cross-disciplinary technology innovator with 8+ years of experience leading specialized development teams to build solutions from cutting-edge AI and blockchain systems to practical e-commerce and business management platforms. Started coding at age 9 and have been building breakthrough technology solutions ever since. Leading a focused team of 4 specialists: AI/ML Engineer, Blockchain Developer, Full-Stack Developer, and Mobile/IoT Specialist. We bridge the gap between advanced technology and real-world business needs, specializing in both high-end international projects (AI, blockchain, IoT) and practical Indonesian market solutions (e-commerce, POS systems, UMKM apps). Working with startups, enterprises, local businesses, and visionary founders who want to leverage technology for exponential growth.",
   email: "allen.elzayn@email.com",
   phone: "+62 812-3456-7890",
   location: "Jakarta, Indonesia",
