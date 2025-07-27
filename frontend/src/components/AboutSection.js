@@ -73,11 +73,11 @@ const AboutSection = () => {
                 {/* Key Stats */}
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="text-center p-4 bg-gray-50 rounded-lg border">
-                    <div className="text-2xl font-bold text-black">8+</div>
+                    <div className="text-2xl font-bold text-black">5+</div>
                     <div className="text-sm text-gray-600 font-mono uppercase">Years Experience</div>
                   </div>
                   <div className="text-center p-4 bg-gray-50 rounded-lg border">
-                    <div className="text-2xl font-bold text-black">100+</div>
+                    <div className="text-2xl font-bold text-black">25+</div>
                     <div className="text-sm text-gray-600 font-mono uppercase">Projects Delivered</div>
                   </div>
                 </div>
