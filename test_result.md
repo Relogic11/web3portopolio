@@ -147,7 +147,7 @@ test_plan:
 
 agent_communication:
   - agent: "main"
-    message: "Completed testimonials section replacement. The old testimonials with client quotes and money-focused statistics have been replaced with a more professional 'Why Choose Me' section showcasing technical achievements, core expertise, and appropriate metrics. The About page was actually not empty - it has full content including bio, skills, and professional journey. User may have been looking at the wrong section or had a loading issue."
+    message: "Completed testimonials section replacement and fixed About page issue. The old testimonials with client quotes and money-focused statistics have been replaced with a more professional 'Why Choose Me' section showcasing technical achievements, core expertise, and appropriate metrics. Also fixed the About page content display issue by removing problematic Framer Motion animations that were preventing content from rendering. Both issues are now resolved and working properly."
 
 
 
