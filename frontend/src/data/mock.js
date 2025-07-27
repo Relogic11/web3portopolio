@@ -72,7 +72,7 @@ export const projects = [
     bgColor: "mid-purple",
     textColor: "white",
     technologies: ["PyTorch", "OpenCV", "YOLO", "TensorRT", "MQTT", "React"],
-    timeline: "6 months",
+    timeline: "2 months",
     impact: "98.7% accuracy, 60% reduction in manual inspection",
     details: "Built an automated quality control system using state-of-the-art computer vision models. Deployed on edge devices for real-time processing with sub-100ms detection latency and automated reporting.",
     clientType: "Manufacturing Company"
