@@ -125,7 +125,7 @@ const TestimonialsSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 text-center">
             {[
               { number: '8+', label: 'Years Experience' },
-              { number: '50+', label: 'Projects Completed' },
+              { number: '100+', label: 'Projects Completed' },
               { number: '100%', label: 'Client Satisfaction' }
             ].map((stat, index) => (
               <motion.div
