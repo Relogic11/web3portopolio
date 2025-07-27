@@ -227,7 +227,7 @@ export const projects = [
     description: "Cross-platform desktop application for file management with system integration and performance optimization",
     categories: ["Desktop App", "Rust", "System Programming"],
     bgColor: "mid-red",
-    textColor: "white",
+    textColor: "black",
     technologies: ["Rust", "Tauri", "React", "TypeScript", "SQLite", "System APIs"],
     timeline: "2 months",
     impact: "50% faster than Electron alternatives, 80% less memory usage",
