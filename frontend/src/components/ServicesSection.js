@@ -159,7 +159,7 @@ const ServicesSection = () => {
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-4 bg-white text-black font-mono uppercase text-sm tracking-wider rounded-full hover:bg-gray-200 transition-colors duration-200"
                 >
-                  Get Free Quote
+                  Get In Touch
                 </motion.button>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
