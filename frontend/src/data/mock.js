@@ -70,7 +70,7 @@ export const projects = [
     title: "Computer Vision Quality Control System",
     description: "Real-time defect detection for manufacturing using advanced computer vision and edge AI processing",
     categories: ["Computer Vision", "AI/ML", "Industrial IoT"],
-    bgColor: "mid-purple",
+    bgColor: "white",
     textColor: "black",
     technologies: ["PyTorch", "OpenCV", "YOLO", "TensorRT", "MQTT", "React"],
     timeline: "3 months",
