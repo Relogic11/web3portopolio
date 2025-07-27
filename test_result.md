@@ -117,6 +117,21 @@ frontend:
         agent: "main"
         comment: "Successfully replaced testimonials carousel with 'Why Choose Me' achievements section featuring Technical Excellence, Innovation Focus, and Performance Driven cards. Removed money-related statistics ($650K+, 2.3M+) and replaced with more appropriate metrics (8+ Years Experience, 50+ Projects Completed, 100% Client Satisfaction). Added Core Expertise skills showcase with interactive skill tags."
 
+  - task: "Fix About page content not displaying"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/pages/AboutPage.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: false
+        agent: "main"
+        comment: "User reported About page content was not displaying below hero section (white/empty). Found issue with Framer Motion whileInView animations causing rendering problems."
+      - working: true
+        agent: "main"
+        comment: "Fixed About page by removing complex Framer Motion viewport animations that were preventing content rendering. Simplified animations while keeping the visual appeal. Content now displays properly including My Story, Expertise Areas, Professional Journey, and CTA sections."
+
 metadata:
   created_by: "main_agent"
   version: "1.0"
