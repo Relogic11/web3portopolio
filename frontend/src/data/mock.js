@@ -147,26 +147,26 @@ export const experience = [
 export const testimonials = [
   {
     id: 1,
-    name: "Sarah Chen",
-    role: "CTO at TechCorp Inc.",
-    company: "TechCorp Inc.",
-    content: "Allen's architectural vision transformed our entire technology stack. His ability to see the big picture while handling complex technical details is unmatched. The cloud migration he led saved us millions.",
+    name: "Sarah Wijaya",
+    role: "Founder",
+    company: "EduTech Indonesia",
+    content: "Allen transformed our vision into reality! His e-learning platform exceeded our expectations. The attention to detail and smooth user experience helped us acquire 500+ students in just 3 months. Highly recommended!",
     avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face"
   },
   {
     id: 2,
-    name: "Michael Rodriguez", 
-    role: "VP Engineering",
-    company: "CloudVision Solutions",
-    content: "Working with Allen was transformative. He doesn't just build systems - he crafts elegant solutions that scale beautifully. His microservices architecture reduced our operational complexity by 60%.",
+    name: "Budi Santoso", 
+    role: "Restaurant Owner",
+    company: "Warung Nasi Budi",
+    content: "The POS system Allen built for my restaurant is amazing! Order processing is 40% faster now, and I can track everything from my phone. My staff loves how easy it is to use. Worth every rupiah!",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
   },
   {
     id: 3,
-    name: "Dr. Emily Watson",
-    role: "Head of Innovation", 
-    company: "DataFlow Systems",
-    content: "Allen's systems thinking is exceptional. He designed our analytics platform to handle massive scale while maintaining simplicity. Three years later, it's still our competitive advantage.",
+    name: "Lisa Putri",
+    role: "Property Manager", 
+    company: "Jakarta Property Solutions",
+    content: "Allen's property management dashboard saved our business! We can now manage 200+ properties efficiently. The automated reports and maintenance tracking features are game-changers. Professional work!",
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face"
   }
 ];
