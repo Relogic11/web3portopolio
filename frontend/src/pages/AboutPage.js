@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import { personalInfo, experience, skills, team } from '../data/mock';
+import { personalInfo, experience, skills } from '../data/mock';
 import { Calendar, MapPin, Briefcase, Award, Users } from 'lucide-react';
 
 const AboutPage = () => {
