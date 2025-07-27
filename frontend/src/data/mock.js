@@ -14,14 +14,15 @@ export const personalInfo = {
 };
 
 export const skills = [
-  { category: "Programming & Development", items: ["Python", "JavaScript", "PHP", "Go", "C++", "Java", "TypeScript"] },
-  { category: "AI & Machine Learning", items: ["TensorFlow", "PyTorch", "OpenAI GPT", "Computer Vision", "NLP", "LangChain"] },
-  { category: "Blockchain & Web3", items: ["Solidity", "Ethereum", "Polygon", "Web3.js", "DeFi", "Smart Contracts"] },
-  { category: "Web Development", items: ["Laravel", "React", "Next.js", "Vue.js", "Angular", "Node.js", "FastAPI"] },
-  { category: "IoT & Hardware", items: ["Arduino", "Raspberry Pi", "LoRaWAN", "MQTT", "Edge Computing", "Sensor Networks"] },
-  { category: "Mobile Development", items: ["React Native", "Flutter", "Ionic", "PWA", "Cordova"] },
-  { category: "Database & Backend", items: ["MySQL", "PostgreSQL", "MongoDB", "Redis", "Firebase", "GraphQL"] },
-  { category: "Cloud & DevOps", items: ["AWS", "GCP", "DigitalOcean", "Docker", "Kubernetes", "CI/CD"] }
+  { category: "Programming Languages", items: ["Python", "JavaScript", "TypeScript", "Rust", "Go", "PHP", "Java", "C++", "Solidity"] },
+  { category: "Frontend Frameworks", items: ["React", "Next.js", "Vue.js", "Angular", "Svelte", "Tailwind CSS", "Bootstrap", "Material-UI"] },
+  { category: "Backend Frameworks", items: ["Node.js", "Express.js", "FastAPI", "Django", "Flask", "Laravel", "Spring Boot", "Actix Web"] },
+  { category: "Blockchain & Web3", items: ["Solana", "Ethereum", "Polygon", "Binance Smart Chain", "Web3.js", "ethers.js", "Anchor Framework"] },
+  { category: "AI & Machine Learning", items: ["TensorFlow", "PyTorch", "OpenAI GPT", "Hugging Face", "Computer Vision", "NLP", "LangChain", "Ollama"] },
+  { category: "Database Technologies", items: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Elasticsearch", "Firebase", "Supabase", "Prisma"] },
+  { category: "Mobile Development", items: ["React Native", "Flutter", "Expo", "Ionic", "PWA", "Tauri", "Capacitor"] },
+  { category: "IoT & Hardware", items: ["Arduino", "Raspberry Pi", "ESP32", "LoRaWAN", "MQTT", "Edge Computing", "Sensor Networks"] },
+  { category: "Cloud & DevOps", items: ["AWS", "Google Cloud", "Vercel", "DigitalOcean", "Docker", "Kubernetes", "GitHub Actions", "Terraform"] }
 ];
 
 export const projects = [
