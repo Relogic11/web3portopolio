@@ -329,6 +329,26 @@ export const services = [
     title: "IoT & Advanced Web Technologies",
     description: "Connected device networks, WebGL applications, real-time systems, and high-performance web solutions",
     icon: "Settings"
+  },
+  {
+    title: "Mobile App Development",
+    description: "Native and cross-platform mobile applications for iOS/Android, including React Native and Flutter solutions",
+    icon: "Smartphone"
+  },
+  {
+    title: "Web Development & CMS",
+    description: "Modern websites, company profiles, custom CMS, and SEO-optimized solutions using Laravel, React, and PHP",
+    icon: "Code"
+  },
+  {
+    title: "API Development & Integration",
+    description: "RESTful APIs, third-party integrations, microservices architecture, and system interconnectivity solutions",
+    icon: "Settings"
+  },
+  {
+    title: "DevOps & Cloud Solutions",
+    description: "AWS/GCP deployment, Docker containerization, CI/CD pipelines, and scalable cloud infrastructure setup",
+    icon: "Settings"
   }
 ];
 
