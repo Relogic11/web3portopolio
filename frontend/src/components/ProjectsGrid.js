@@ -74,7 +74,7 @@ const ProjectsGrid = () => {
               Featured Projects
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Architectural solutions that drive innovation and deliver exceptional results
+              Real client projects that delivered results and exceeded expectations
             </p>
             <div className="w-24 h-1 bg-white mx-auto mt-6"></div>
           </motion.div>
