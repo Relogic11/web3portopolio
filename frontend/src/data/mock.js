@@ -16,11 +16,12 @@ export const personalInfo = {
 export const skills = [
   { category: "AI & Machine Learning", items: ["TensorFlow", "PyTorch", "OpenAI GPT", "Computer Vision", "NLP", "LangChain"] },
   { category: "Blockchain & Web3", items: ["Solidity", "Ethereum", "Polygon", "Web3.js", "DeFi", "Smart Contracts"] },
-  { category: "IoT & Hardware", items: ["Arduino", "Raspberry Pi", "MQTT", "LoRaWAN", "Edge Computing", "Sensors"] },
-  { category: "Advanced Frontend", items: ["React", "Next.js", "Three.js", "WebGL", "WebRTC", "PWA"] },
-  { category: "Backend & Infrastructure", items: ["Node.js", "Python", "Go", "Rust", "Kubernetes", "Microservices"] },
-  { category: "Data & Analytics", items: ["BigQuery", "Apache Kafka", "Redis", "Neo4j", "InfluxDB", "Grafana"] },
-  { category: "Cloud & DevOps", items: ["AWS", "GCP", "Docker", "Terraform", "CI/CD", "Monitoring"] }
+  { category: "Web Development (PHP/JS)", items: ["Laravel", "CodeIgniter", "PHP", "MySQL", "jQuery", "Bootstrap", "Vue.js"] },
+  { category: "Modern Frontend", items: ["React", "Next.js", "Vue.js", "Angular", "Tailwind", "TypeScript"] },
+  { category: "Backend & Database", items: ["Node.js", "Python", "Laravel", "MySQL", "PostgreSQL", "MongoDB", "Redis"] },
+  { category: "Mobile Development", items: ["React Native", "Flutter", "Ionic", "PWA", "Cordova"] },
+  { category: "E-commerce & Business", items: ["WooCommerce", "Shopify", "Payment Gateway", "POS Systems", "CRM", "ERP"] },
+  { category: "Cloud & DevOps", items: ["AWS", "GCP", "DigitalOcean", "cPanel", "Docker", "CI/CD"] }
 ];
 
 export const projects = [
