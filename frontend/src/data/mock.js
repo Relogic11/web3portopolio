@@ -33,7 +33,7 @@ export const projects = [
     bgColor: "light-pink",
     textColor: "black",
     technologies: ["Python", "TensorFlow", "Web3.py", "Redis", "WebSocket", "AWS"],
-    timeline: "3 months",
+    timeline: "1 month",
     impact: "Handles massive trading volume with 340% improved performance",
     details: "Built an intelligent trading ecosystem that combines machine learning prediction models with blockchain execution. Features include sentiment analysis, technical indicators ML, cross-exchange arbitrage, and autonomous position management.",
     clientType: "Crypto Fund"
