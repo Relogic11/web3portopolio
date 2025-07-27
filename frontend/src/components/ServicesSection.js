@@ -96,11 +96,8 @@ const ServicesSection = () => {
                       {service.description}
                     </p>
 
-                    {/* Pricing */}
-                    <div className="flex items-center justify-between">
-                      <div className="text-lg font-bold text-black">
-                        {service.price}
-                      </div>
+                    {/* Arrow */}
+                    <div className="flex justify-end">
                       <ArrowRight 
                         size={18} 
                         className="text-gray-400 group-hover:text-black group-hover:translate-x-1 transition-all duration-300" 
