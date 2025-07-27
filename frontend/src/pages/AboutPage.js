@@ -120,58 +120,6 @@ const AboutPage = () => {
               </div>
             </div>
 
-            {/* Team Section */}
-            <div className="mb-20">
-              <h2 className="text-4xl font-display font-bold text-black text-center mb-12">
-                Our Specialized Team
-              </h2>
-              <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-                A focused team of 4 specialists working together to deliver exceptional results across different technology domains.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {team.map((member, index) => (
-                  <div
-                    key={member.id}
-                    className="bg-white border border-gray-200 rounded-2xl p-6 text-center hover:shadow-xl transition-shadow duration-300"
-                  >
-                    <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 border-2 border-gray-200">
-                      <img
-                        src={member.avatar}
-                        alt={member.name}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <h3 className="font-bold text-black mb-2">{member.name}</h3>
-                    <p className="text-sm text-gray-600 mb-3">{member.role}</p>
-                    <div className="text-xs text-black font-mono mb-3">{member.experience}</div>
-                    
-                    <div className="space-y-2 mb-4">
-                      {member.specialties.map((specialty, specIndex) => (
-                        <span
-                          key={specIndex}
-                          className="inline-block px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full mr-1 mb-1"
-                        >
-                          {specialty}
-                        </span>
-                      ))}
-                    </div>
-                    
-                    <p className="text-xs text-gray-600 leading-relaxed">{member.bio}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div className="text-center mt-12 p-6 bg-gray-50 rounded-2xl">
-                <Users size={32} className="mx-auto mb-4 text-black" />
-                <h3 className="text-xl font-bold text-black mb-2">Collaborative Approach</h3>
-                <p className="text-gray-600">
-                  Each project benefits from our collective expertise. Whether you need AI integration, blockchain development, 
-                  or mobile solutions, our team ensures the right specialist leads your project while maintaining seamless collaboration.
-                </p>
-              </div>
-            </div>
-
             {/* Experience Timeline */}
             <div className="mb-20">
               <h2 className="text-4xl font-display font-bold text-black text-center mb-12">
