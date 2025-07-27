@@ -173,24 +173,28 @@ export const testimonials = [
 
 export const services = [
   {
-    title: "System Architecture Design",
-    description: "End-to-end architecture planning for scalable, resilient systems",
-    icon: "Building"
+    title: "Web Development",
+    description: "Custom websites and web applications built with modern technologies",
+    icon: "Code",
+    price: "Starting from $2,000"
   },
   {
-    title: "Cloud Strategy & Migration",
-    description: "Strategic cloud adoption and seamless legacy system migration",
-    icon: "Cloud"
+    title: "Mobile App Development", 
+    description: "Cross-platform mobile applications for iOS and Android",
+    icon: "Smartphone",
+    price: "Starting from $5,000"
   },
   {
-    title: "Performance Optimization",
-    description: "System performance analysis and optimization for maximum efficiency",
-    icon: "Zap"
+    title: "E-Commerce Solutions",
+    description: "Complete online stores with payment integration and admin panels", 
+    icon: "ShoppingCart",
+    price: "Starting from $3,500"
   },
   {
-    title: "Technical Leadership",
-    description: "Architecture guidance and technical mentoring for development teams",
-    icon: "Users"
+    title: "System Architecture & Consulting",
+    description: "Technical consulting and system architecture planning for scalable solutions",
+    icon: "Settings",
+    price: "Starting from $150/hour"
   }
 ];
 
