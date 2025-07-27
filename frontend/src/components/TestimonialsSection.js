@@ -136,9 +136,9 @@ const TestimonialsSection = () => {
           {/* Stats Section */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 text-center">
             {[
-              { number: '25+', label: 'Happy Clients' },
-              { number: '98%', label: 'Satisfaction Rate' },
-              { number: '5.0★', label: 'Average Rating' }
+              { number: '$650K+', label: 'Project Value' },
+              { number: '99.9%', label: 'System Uptime' },
+              { number: '2.3M+', label: 'Daily Volume' }
             ].map((stat, index) => (
               <motion.div
                 key={index}
