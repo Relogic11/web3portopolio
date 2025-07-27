@@ -175,7 +175,7 @@ export const projects = [
     description: "Professional corporate website with content management system and SEO optimization",
     categories: ["Web Development", "CMS", "SEO"],
     bgColor: "dark-blue",
-    textColor: "white",
+    textColor: "black",
     technologies: ["Laravel", "MySQL", "Bootstrap", "jQuery", "SEO Tools"],
     timeline: "2 months",
     impact: "Improved search ranking to page 1 Google, 200% increase in inquiries",
