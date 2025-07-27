@@ -160,6 +160,8 @@ test_plan:
 agent_communication:
   - agent: "main"
     message: "Completed testimonials section replacement and fixed About page issue. The old testimonials with client quotes and money-focused statistics have been replaced with a more professional 'Why Choose Me' section showcasing technical achievements, core expertise, and appropriate metrics. Also fixed the About page content display issue by removing problematic Framer Motion animations that were preventing content from rendering. Both issues are now resolved and working properly."
+  - agent: "main"
+    message: "Updated portfolio content based on user feedback: 1) Shortened project timelines from 8-20 months to more realistic 1-5 months, 2) Enhanced technical skills by adding Programming & Development category and IoT & Hardware category, 3) Removed explicit team section while maintaining team impression through project descriptions. Portfolio now appears more professional and realistic."
 
 
 
