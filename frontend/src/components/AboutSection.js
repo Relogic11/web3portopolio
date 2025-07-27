@@ -77,7 +77,7 @@ const AboutSection = () => {
                     <div className="text-sm text-gray-600 font-mono uppercase">Years Experience</div>
                   </div>
                   <div className="text-center p-4 bg-gray-50 rounded-lg border">
-                    <div className="text-2xl font-bold text-black">9+</div>
+                    <div className="text-2xl font-bold text-black">100+</div>
                     <div className="text-sm text-gray-600 font-mono uppercase">Projects Completed</div>
                   </div>
                 </div>
