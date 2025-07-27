@@ -132,6 +132,18 @@ frontend:
         agent: "main"
         comment: "Fixed About page by removing complex Framer Motion viewport animations that were preventing content rendering. Simplified animations while keeping the visual appeal. Content now displays properly including My Story, Expertise Areas, Professional Journey, and CTA sections."
 
+  - task: "Update portfolio content based on user feedback"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/data/mock.js, /app/frontend/src/pages/AboutPage.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Updated portfolio content per user request: 1) Shortened all project timelines from 8-20 months to 1-5 months for more realistic expectations, 2) Added 'Programming & Development' category to technical skills with core languages (Python, JavaScript, PHP, Go, C++, Java, TypeScript), 3) Added 'IoT & Hardware' skills category including Arduino, Raspberry Pi, LoRaWAN, MQTT, Edge Computing, 4) Removed team section from About page while maintaining the impression of having a team through project descriptions and bio content."
+
 metadata:
   created_by: "main_agent"
   version: "1.0"
