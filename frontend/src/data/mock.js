@@ -277,18 +277,18 @@ export const services = [
     icon: "Code"
   },
   {
+    title: "Blockchain & Web3 Development", 
+    description: "Smart contracts, DeFi protocols, NFT platforms, and decentralized applications for global markets",
+    icon: "Smartphone"
+  },
+  {
     title: "E-commerce & Business Systems", 
     description: "Complete online stores, POS systems, inventory management, and payment gateway integration for local businesses",
     icon: "ShoppingCart"
   },
   {
-    title: "Mobile App Development",
-    description: "Native and cross-platform mobile applications for iOS/Android, including business management and delivery apps",
-    icon: "Smartphone"
-  },
-  {
-    title: "Web Development & CMS",
-    description: "Modern websites, company profiles, custom CMS, and SEO-optimized solutions using Laravel, React, and PHP",
+    title: "IoT & Advanced Web Technologies",
+    description: "Connected device networks, WebGL applications, real-time systems, and high-performance web solutions",
     icon: "Settings"
   }
 ];
