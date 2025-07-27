@@ -80,7 +80,7 @@ const HeroSlider = () => {
                 Allen
               </h1>
               <p className="text-lg lg:text-xl font-mono uppercase tracking-widest opacity-60">
-                Freelance Developer
+                Tech Innovator
               </p>
             </div>
           </div>
