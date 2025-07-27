@@ -138,7 +138,7 @@ export const projects = [
     bgColor: "dark-green",
     textColor: "white",
     technologies: ["Python", "NumPy", "SciPy", "Real-time DSP", "C++", "Qt"],
-    timeline: "1 month",
+    timeline: "6 months",
     impact: "95% accuracy in gesture recognition from neural signals",
     details: "Developed a complete BCI pipeline from raw neural signals to digital commands. Includes noise filtering, feature extraction, machine learning classification, and real-time feedback systems.",
     clientType: "Neurotechnology Lab"
