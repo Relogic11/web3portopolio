@@ -96,7 +96,7 @@ export const projects = [
     title: "Quantum-Safe Messaging Protocol", 
     description: "Post-quantum cryptography messaging system with forward secrecy and distributed key management",
     categories: ["Cryptography", "Security", "Distributed Systems"],
-    bgColor: "mid-orange",
+    bgColor: "white",
     textColor: "black",
     technologies: ["Go", "Post-Quantum Crypto", "libsodium", "WebRTC", "React Native"],
     timeline: "5 months",
