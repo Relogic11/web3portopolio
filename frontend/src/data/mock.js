@@ -44,7 +44,7 @@ export const projects = [
     title: "Smart City IoT Infrastructure",
     description: "Complete IoT ecosystem for smart traffic management, air quality monitoring, and predictive city analytics",
     categories: ["IoT", "Edge Computing", "Data Analytics"],
-    bgColor: "mid-blue",
+    bgColor: "white",
     textColor: "white", 
     technologies: ["Python", "LoRaWAN", "MQTT", "InfluxDB", "Grafana", "Edge AI"],
     timeline: "1 month",
