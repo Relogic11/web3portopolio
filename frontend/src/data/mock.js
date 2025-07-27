@@ -31,7 +31,7 @@ export const projects = [
     title: "AI-Powered Trading Bot Ecosystem",
     description: "Autonomous crypto trading system using reinforcement learning, real-time market analysis, and multi-exchange arbitrage",
     categories: ["AI/ML", "Blockchain", "Real-time Systems"],
-    bgColor: "light-pink",
+    bgColor: "white",
     textColor: "black",
     technologies: ["Python", "TensorFlow", "Web3.py", "Redis", "WebSocket", "AWS"],
     timeline: "3 months",
