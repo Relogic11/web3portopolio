@@ -201,7 +201,7 @@ export const projects = [
     description: "Decentralized exchange and liquidity farming protocol built on Solana with high-speed transactions",
     categories: ["DeFi", "Solana", "Blockchain"],
     bgColor: "dark-purple",
-    textColor: "white",
+    textColor: "black",
     technologies: ["Rust", "Anchor Framework", "Solana", "React", "TypeScript", "Web3.js"],
     timeline: "3 months",
     impact: "$2M+ TVL, 50K+ daily transactions, 5000+ active users",
