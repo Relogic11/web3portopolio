@@ -273,22 +273,22 @@ export const testimonials = [
 export const services = [
   {
     title: "AI & Machine Learning Solutions",
-    description: "Custom AI models, computer vision systems, NLP applications, and intelligent automation",
+    description: "Custom AI models, computer vision systems, NLP applications, and intelligent automation for enterprise clients",
     icon: "Code"
   },
   {
-    title: "Blockchain & Web3 Development", 
-    description: "Smart contracts, DeFi protocols, NFT platforms, and decentralized applications",
-    icon: "Smartphone"
-  },
-  {
-    title: "IoT & Edge Computing Systems",
-    description: "Connected device networks, sensor integration, real-time analytics, and edge AI deployment", 
+    title: "E-commerce & Business Systems", 
+    description: "Complete online stores, POS systems, inventory management, and payment gateway integration for local businesses",
     icon: "ShoppingCart"
   },
   {
-    title: "Advanced Web Technologies",
-    description: "WebGL applications, real-time systems, AR/VR experiences, and high-performance web apps",
+    title: "Mobile App Development",
+    description: "Native and cross-platform mobile applications for iOS/Android, including business management and delivery apps",
+    icon: "Smartphone"
+  },
+  {
+    title: "Web Development & CMS",
+    description: "Modern websites, company profiles, custom CMS, and SEO-optimized solutions using Laravel, React, and PHP",
     icon: "Settings"
   }
 ];
