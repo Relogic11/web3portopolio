@@ -148,7 +148,7 @@ export const projects = [
     title: "Multi-Store E-commerce Platform",
     description: "Complete e-commerce solution with multi-vendor support, payment gateway integration, and admin dashboard",
     categories: ["E-commerce", "Web Development", "Payment Systems"],
-    bgColor: "light-green",
+    bgColor: "white",
     textColor: "black",
     technologies: ["Laravel", "MySQL", "Vue.js", "Midtrans", "Bootstrap", "jQuery"],
     timeline: "2 months",
