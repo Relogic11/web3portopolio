@@ -112,7 +112,7 @@ export const projects = [
     bgColor: "light-pink",
     textColor: "black", 
     technologies: ["CUDA", "Verilog", "C++", "TensorRT", "OpenCL", "Python"],
-    timeline: "2 months",
+    timeline: "6 months",
     impact: "10x performance improvement over standard GPUs",
     details: "Designed custom neural processing units with optimized instruction sets for transformer architectures. Includes compiler toolchain, hardware simulator, and automated design space exploration.",
     clientType: "Semiconductor Startup"
