@@ -240,7 +240,7 @@ export const projects = [
     description: "Automated code analysis and review system using machine learning for bug detection and code optimization",
     categories: ["AI/ML", "Developer Tools", "Code Analysis"],
     bgColor: "dark-orange",
-    textColor: "white",
+    textColor: "black",
     technologies: ["Python", "FastAPI", "Hugging Face", "Docker", "PostgreSQL", "React"],
     timeline: "3 months",
     impact: "95% bug detection accuracy, used by 100+ development teams",
