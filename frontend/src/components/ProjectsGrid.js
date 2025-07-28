@@ -158,18 +158,19 @@ const ProjectsGrid = () => {
             ))}
           </div>
 
-          {/* View All Button */}
+          {/* View Projects Page Button */}
           <motion.div 
             variants={itemVariants}
             className="text-center mt-12"
           >
-            <motion.button
+            <motion.a
+              href="/projects"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 border border-white text-white font-mono uppercase text-sm tracking-wider rounded-full hover:bg-white hover:text-black transition-all duration-200"
+              className="inline-block px-8 py-4 border border-white text-white font-mono uppercase text-sm tracking-wider rounded-full hover:bg-white hover:text-black transition-all duration-200"
             >
               View All Projects
-            </motion.button>
+            </motion.a>
           </motion.div>
         </motion.div>
       </div>
