@@ -104,12 +104,12 @@ const ProjectsGrid = () => {
                   {/* Project Header */}
                   <div className="mb-4">
                     <div className="flex items-start justify-between mb-3">
-                      <h3 className="text-xl font-bold group-hover:underline transition-all duration-200">
+                      <h3 className="text-xl font-bold transition-all duration-200"> {/* Removed group-hover:underline */}
                         {project.title}
                       </h3>
                       <ExternalLink 
                         size={18} 
-                        className="opacity-60 group-hover:opacity-100 transition-opacity duration-200" 
+                        className="opacity-40" /* Reduced opacity since not interactive */
                       />
                     </div>
                     
