@@ -86,11 +86,11 @@ const ProjectsGrid = () => {
                 key={project.id}
                 variants={itemVariants}
                 whileHover={{ 
-                  y: -8,
+                  y: -4, // Reduced hover effect since not clickable
                   transition: { duration: 0.2 } 
                 }}
                 className={clsx(
-                  'project-card rounded-lg p-6 h-full flex flex-col justify-between cursor-pointer group overflow-hidden relative',
+                  'project-card rounded-lg p-6 h-full flex flex-col justify-between overflow-hidden relative', // Removed cursor-pointer and group
                   getCardStyles(project.bgColor)
                 )}
               >
