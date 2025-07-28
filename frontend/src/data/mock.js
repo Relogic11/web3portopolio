@@ -331,7 +331,7 @@ export const experience = [
   {
     company: "Independent Tech Innovator & Team Lead",
     role: "Full-Stack Developer & AI Specialist",
-    period: "2021 - Present",
+    period: "2021 - Present (Age 21-25)",
     location: "Jakarta, Indonesia",
     achievements: [
       "Leading a specialized team of 4 experts (AI/ML, Blockchain, Full-Stack, Mobile/IoT) in building breakthrough technology solutions", 
@@ -344,7 +344,7 @@ export const experience = [
   {
     company: "Advanced Technology Research & Development",
     role: "Senior Systems Architect & Research Engineer", 
-    period: "2019 - 2021",
+    period: "2019 - 2021 (Age 19-21)",
     location: "Jakarta, Indonesia (Remote + Local)",
     achievements: [
       "Led R&D initiatives in computer vision, edge AI, and IoT ecosystems for smart city and industrial automation projects",
@@ -357,7 +357,7 @@ export const experience = [
   {
     company: "Blockchain Innovation Lab",
     role: "Lead Smart Contract Developer & Security Auditor",
-    period: "2018 - 2019", 
+    period: "2018 - 2019 (Age 18-19)", 
     location: "Remote (Global Clients)",
     achievements: [
       "Designed and deployed 20+ DeFi protocols with advanced security features and cross-chain compatibility",
@@ -370,7 +370,7 @@ export const experience = [
   {
     company: "Freelance Development & Consulting",
     role: "Full-Stack Developer & Technical Consultant",
-    period: "2017 - 2018", 
+    period: "2017 - 2018 (Age 17-18)", 
     location: "Jakarta, Indonesia",
     achievements: [
       "Built 30+ web applications ranging from e-commerce platforms to complex business management systems",
@@ -383,7 +383,7 @@ export const experience = [
   {
     company: "Continuous Learning & Skill Development",
     role: "Self-Directed Technology Explorer",
-    period: "2016 - 2017", 
+    period: "2016 - 2017 (Age 16-17)", 
     location: "Jakarta, Indonesia",
     achievements: [
       "Transitioned from basic programming knowledge to advanced full-stack development through intensive self-study",
@@ -396,7 +396,7 @@ export const experience = [
   {
     company: "Foundation Years - Early Programming Journey",
     role: "Young Developer & Technology Enthusiast",
-    period: "2014 - 2016 (Ages 12-14)", 
+    period: "2014 - 2016 (Age 14-16)", 
     location: "Jakarta, Indonesia",
     achievements: [
       "Built first neural network implementation at age 12 using Python and NumPy, sparking lifelong passion for AI",
@@ -409,13 +409,13 @@ export const experience = [
   {
     company: "The Beginning - Discovery of Programming",
     role: "Curious Child Learning to Code",
-    period: "2012 - 2014 (Ages 9-11)", 
+    period: "2009 - 2014 (Age 9-14)", 
     location: "Jakarta, Indonesia",
     achievements: [
       "Started programming journey at age 9 with simple HTML pages, driven by curiosity about how websites work",
       "Progressed from HTML/CSS to JavaScript and PHP through self-directed learning and online resources",
       "Built first interactive web applications including simple games and calculators for school projects",
-      "Developed understanding of fundamental computer science concepts through experimentation and practice",
+      "Built first neural network implementation at age 12 using Python and NumPy, demonstrating early AI interest",
       "Established foundation of continuous learning and experimentation that would define entire career trajectory"
     ]
   }
