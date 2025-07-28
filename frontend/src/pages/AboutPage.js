@@ -175,7 +175,7 @@ const AboutPage = () => {
                         </ul>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
