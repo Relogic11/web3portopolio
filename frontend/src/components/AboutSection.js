@@ -67,7 +67,7 @@ const AboutSection = () => {
                   {personalInfo.tagline}
                 </h3>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  {personalInfo.bio}
+                  {personalInfo.shortBio}
                 </p>
                 
                 {/* Key Stats */}
