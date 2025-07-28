@@ -337,7 +337,7 @@ export const experience = [
     achievements: [
       "Leading a specialized team of 4 experts (AI/ML, Blockchain, Full-Stack, Mobile/IoT) in building breakthrough technology solutions", 
       "Architected and deployed 50+ production systems across AI, blockchain, IoT, and web development with 99.9% uptime",
-      "Pioneered implementations in quantum-safe cryptography, brain-computer interfaces, and distributed computing systems",
+      "Built advanced implementations in quantum-safe cryptography, brain-computer interfaces, and distributed computing systems",
       "Established scalable development processes that reduced project delivery time by 40% while maintaining code quality",
       "Built comprehensive client relationship management approach resulting in 100% client retention and referral growth"
     ]
