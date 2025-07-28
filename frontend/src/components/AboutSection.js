@@ -9,19 +9,19 @@ const AboutSection = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.1,
+        staggerChildren: 0.1, // Reduced from 0.2  
+        delayChildren: 0.05,  // Reduced from 0.1
       },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 15 }, // Reduced from y: 20
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6,
+        duration: 0.4,        // Reduced from 0.6
         ease: "easeOut",
       },
     },
