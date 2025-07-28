@@ -47,7 +47,7 @@ const ProjectsGrid = () => {
   };
 
   return (
-    <section id="projects" className="py-24 bg-black relative overflow-hidden">
+    <section className="py-24 bg-black relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 opacity-10">
         <div className="grid grid-cols-6 grid-rows-6 h-full w-full">
