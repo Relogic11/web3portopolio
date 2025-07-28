@@ -149,7 +149,7 @@ const ProjectsGrid = () => {
                       </div>
                       <ArrowRight 
                         size={16} 
-                        className="opacity-60 group-hover:translate-x-1 transition-transform duration-200" 
+                        className="opacity-40" /* Removed hover effect since not clickable */
                       />
                     </div>
                   </div>
