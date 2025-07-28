@@ -128,8 +128,12 @@ const AboutPage = () => {
 
               <div className="space-y-8">
                 {experience.map((job, index) => (
-                  <div
+                  <motion.div
                     key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    transition={{ duration: 0.4, delay: index * 0.05 }} // Reduced stagger
                     className="relative bg-white border border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
                   >
                     <div className="absolute top-8 right-8 text-gray-400">
