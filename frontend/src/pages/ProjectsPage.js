@@ -187,19 +187,19 @@ const ProjectsPage = () => {
                     {project.id === 4 && (
                       <>
                         <p className="text-xl text-gray-600 mb-6">
-                          Industri manufaktur modern memerlukan presisi yang tak tertandingi. <strong>{project.title}</strong> hadir sebagai solusi inovatif yang dikembangkan selama {project.timeline} untuk {project.clientType}, berhasil mencapai {project.impact.toLowerCase()}.
+                          Modern manufacturing industry requires unmatched precision. <strong>{project.title}</strong> emerges as an innovative solution developed over {project.timeline} for {project.clientType}, successfully achieving {project.impact.toLowerCase()}.
                         </p>
                         
                         <p>
-                          Sistem ini mengintegrasikan teknologi <strong>computer vision state-of-the-art</strong> dengan model YOLO dan PyTorch untuk deteksi cacat real-time. Setiap produk yang melewati jalur produksi dianalisis dengan kecepatan sub-100ms, memastikan kualitas tanpa mengurangi efisiensi.
+                          This system integrates <strong>state-of-the-art computer vision</strong> technology with YOLO models and PyTorch for real-time defect detection. Every product passing through the production line is analyzed at sub-100ms speed, ensuring quality without reducing efficiency.
                         </p>
                         
                         <p>
-                          Implementasi <strong>edge AI processing</strong> memungkinkan sistem beroperasi secara mandiri tanpa ketergantungan koneksi internet. TensorRT optimization memastikan inferensi model berjalan optimal pada hardware edge device.
+                          The implementation of <strong>edge AI processing</strong> allows the system to operate independently without internet connectivity dependency. TensorRT optimization ensures model inference runs optimally on edge device hardware.
                         </p>
                         
                         <p>
-                          Dengan dashboard React yang intuitif dan komunikasi MQTT untuk reporting otomatis, sistem ini mentransformasi proses quality control tradisional menjadi operasi yang fully automated dan data-driven.
+                          With an intuitive React dashboard and MQTT communication for automated reporting, this system transforms traditional quality control processes into fully automated and data-driven operations.
                         </p>
                       </>
                     )}
