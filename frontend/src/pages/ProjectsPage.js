@@ -175,13 +175,12 @@ const ProjectsPage = () => {
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
 
             {/* Info Section */}
-            <motion.div 
-              variants={itemVariants}
+            <div 
               className="text-center mt-16 bg-gray-50 rounded-2xl p-8"
             >
               <h3 className="text-2xl font-bold text-black mb-4">
