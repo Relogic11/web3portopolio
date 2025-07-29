@@ -496,25 +496,25 @@ export const heroSlides = [
   {
     id: 1,
     project: projects[0],
-    backgroundColor: "#ff3d71",
+    backgroundColor: "#000000",
     textColor: "#ffffff"
   },
   {
     id: 2, 
     project: projects[1],
-    backgroundColor: "#1f47e6", 
-    textColor: "#ffffff"
+    backgroundColor: "#ffffff", 
+    textColor: "#000000"
   },
   {
     id: 3,
     project: projects[2],
-    backgroundColor: "#a1a500",
+    backgroundColor: "#000000",
     textColor: "#ffffff"  
   },
   {
     id: 4,
     project: projects[3], 
-    backgroundColor: "#d987ff",
-    textColor: "#ffffff"
+    backgroundColor: "#ffffff",
+    textColor: "#000000"
   }
 ];
