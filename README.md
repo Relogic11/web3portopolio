@@ -1,6 +1,6 @@
 # Portfolio Website - Installation Guide
 
-A modern, full-stack portfolio website built with React, FastAPI, and MongoDB. Features a responsive design with Tailwind CSS, smooth animations with Framer Motion, and a comprehensive content management system.
+A modern, static portfolio website built with React. Features a responsive design with Tailwind CSS, smooth animations with Framer Motion, and beautiful UI components. Perfect for showcasing your projects, skills, and professional experience.
 
 ## 🚀 Quick Start
 
@@ -9,9 +9,10 @@ A modern, full-stack portfolio website built with React, FastAPI, and MongoDB. F
 git clone <your-repository-url>
 cd portfolio-website
 
-# Install and run everything
-make install  # or follow the manual installation steps below
-make start    # or follow the manual start steps below
+# Install dependencies and start
+cd frontend
+yarn install
+yarn start
 ```
 
 ## 📋 Prerequisites
@@ -19,18 +20,14 @@ make start    # or follow the manual start steps below
 Before you begin, ensure you have the following installed on your system:
 
 ### Required Software
-- **Python 3.11+** - [Download Python](https://www.python.org/downloads/)
 - **Node.js 18.0+** - [Download Node.js](https://nodejs.org/en/download/)
 - **Yarn Package Manager** - [Install Yarn](https://yarnpkg.com/getting-started/install)
-- **MongoDB 6.0+** - [Download MongoDB](https://www.mongodb.com/try/download/community)
 - **Git** - [Download Git](https://git-scm.com/downloads)
 
 ### Verify Installation
 ```bash
-python --version   # Should show Python 3.11+
 node --version     # Should show v18.0+  
 yarn --version     # Should show 1.22+
-mongod --version   # Should show MongoDB 6.0+
 git --version      # Should show Git 2.0+
 ```
 
