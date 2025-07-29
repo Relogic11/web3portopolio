@@ -215,7 +215,7 @@ const ProjectsPage = () => {
                         </p>
                         
                         <p>
-                          Implementasi teknologi terdepan dalam proyek ini mendemonstrasikan kemampuan kami dalam menghadirkan solusi inovatif yang tidak hanya memenuhi kebutuhan klien, tetapi juga membuka peluang bisnis baru di masa depan.
+                          The cutting-edge technology implementation in this project demonstrates our ability to deliver innovative solutions that not only meet client needs but also open new business opportunities for the future.
                         </p>
                       </>
                     )}
