@@ -150,7 +150,7 @@ const ProjectsPage = () => {
                         {project.technologies.map((tech, techIndex) => (
                           <span 
                             key={techIndex}
-                            className="px-3 py-1 text-xs font-mono uppercase tracking-wider rounded-full border border-current/50 bg-current/10 group-hover:bg-current/20 transition-colors duration-200"
+                            className="px-3 py-1 text-xs font-mono uppercase tracking-wider rounded-full border border-current/50 bg-current/10"
                           >
                             {tech}
                           </span>
