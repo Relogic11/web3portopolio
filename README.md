@@ -94,26 +94,35 @@ After starting the development server:
 
 ```
 portfolio-website/
-├── 📁 backend/                 # FastAPI Backend
-│   ├── 📄 server.py           # Main FastAPI application
-│   ├── 📄 requirements.txt    # Python dependencies
-│   ├── 📄 .env               # Backend environment variables
-│   └── 📁 __pycache__/       # Python cache files
-├── 📁 frontend/               # React Frontend  
+├── 📁 frontend/               # React Frontend Application
 │   ├── 📁 public/            # Static assets
+│   │   ├── index.html        # Main HTML file
+│   │   ├── favicon.ico       # Website favicon
+│   │   └── manifest.json     # Web app manifest
 │   ├── 📁 src/               # Source code
-│   │   ├── 📁 components/    # React components
+│   │   ├── 📁 components/    # Reusable React components
+│   │   │   ├── HeroSection.js
+│   │   │   ├── ProjectCard.js
+│   │   │   ├── SkillsSection.js
+│   │   │   └── TestimonialsSection.js
 │   │   ├── 📁 pages/         # Page components
-│   │   ├── 📁 data/          # Mock data and constants
+│   │   │   ├── HomePage.js   # Landing page
+│   │   │   ├── AboutPage.js  # About page
+│   │   │   ├── ProjectsPage.js # Projects listing
+│   │   │   ├── ProjectPage.js # Individual project
+│   │   │   └── ContactPage.js # Contact page
+│   │   ├── 📁 data/          # Static data and constants
+│   │   │   └── mock.js       # Portfolio content data
+│   │   ├── 📁 lib/           # Utility functions
 │   │   ├── 📄 App.js         # Main App component
+│   │   ├── 📄 App.css        # Global styles
 │   │   └── 📄 index.js       # Entry point
 │   ├── 📄 package.json       # Node.js dependencies
-│   ├── 📄 tailwind.config.js # Tailwind CSS config
-│   ├── 📄 .env              # Frontend environment variables
-│   └── 📄 yarn.lock         # Yarn lock file
-├── 📁 tests/                 # Test files
-├── 📄 README.md             # This file
-├── 📄 test_result.md        # Testing documentation
+│   ├── 📄 tailwind.config.js # Tailwind CSS configuration
+│   ├── 📄 .env               # Environment variables
+│   └── 📄 yarn.lock          # Yarn lock file
+├── 📁 backend/               # Backend (for future use)
+├── 📄 README.md             # This installation guide
 └── 📄 .gitignore            # Git ignore rules
 ```
 
