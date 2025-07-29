@@ -39,141 +39,56 @@ git clone <your-repository-url>
 cd portfolio-website
 ```
 
-### 2. Backend Setup (FastAPI)
+### 2. Frontend Setup (React)
 
-#### 2.1. Navigate to Backend Directory
+#### 2.1. Navigate to Frontend Directory
 ```bash
-cd backend
+cd frontend
 ```
 
-#### 2.2. Create Virtual Environment (Recommended)
-```bash
-# Create virtual environment
-python -m venv venv
-
-# Activate virtual environment
-# On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
-```
-
-#### 2.3. Install Backend Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-#### 2.4. Configure Environment Variables
-```bash
-# Create .env file in backend directory
-cp .env.example .env  # if example exists, or create manually
-
-# Edit .env file with your configurations:
-```
-
-**Backend .env file:**
-```env
-MONGO_URL="mongodb://localhost:27017"
-DB_NAME="portfolio_database"
-```
-
-### 3. Frontend Setup (React)
-
-#### 3.1. Navigate to Frontend Directory
-```bash
-cd ../frontend  # from backend directory
-# or
-cd frontend     # from root directory
-```
-
-#### 3.2. Install Frontend Dependencies
+#### 2.2. Install Dependencies
 ```bash
 yarn install
 ```
 
-#### 3.3. Configure Environment Variables
+#### 2.3. Configure Environment Variables (Optional)
 ```bash
-# Create .env file in frontend directory
-cp .env.example .env  # if example exists, or create manually
+# Create .env file in frontend directory if needed
+touch .env
 ```
 
-**Frontend .env file:**
+**Frontend .env file (optional for static version):**
 ```env
-REACT_APP_BACKEND_URL=http://localhost:8001
+# For development
 WDS_SOCKET_PORT=3000
-```
 
-### 4. Database Setup (MongoDB)
-
-#### 4.1. Start MongoDB Service
-```bash
-# On Windows (if installed as service):
-net start MongoDB
-
-# On macOS (if installed with brew):
-brew services start mongodb/brew/mongodb-community
-
-# On Linux (systemd):
-sudo systemctl start mongod
-
-# Or start MongoDB manually:
-mongod --dbpath /path/to/your/db/directory
-```
-
-#### 4.2. Verify MongoDB Connection
-```bash
-# Connect to MongoDB shell
-mongosh
-
-# Check if database is accessible
-use portfolio_database
-show collections
-exit
+# If you plan to add backend later
+# REACT_APP_BACKEND_URL=http://localhost:8001
 ```
 
 ## 🚀 Running the Application
 
-### Method 1: Using Supervisor (Recommended for Production-like Setup)
-
-If you have supervisor configured:
-```bash
-sudo supervisorctl restart all
-```
-
-### Method 2: Manual Start (Development)
-
-#### Terminal 1 - Start Backend:
-```bash
-cd backend
-# Activate virtual environment if using
-source venv/bin/activate  # macOS/Linux
-# or
-venv\Scripts\activate     # Windows
-
-# Start FastAPI server
-uvicorn server:app --host 0.0.0.0 --port 8001 --reload
-```
-
-#### Terminal 2 - Start Frontend:
+### Development Mode
 ```bash
 cd frontend
 yarn start
 ```
 
-#### Terminal 3 - Ensure MongoDB is Running:
+The application will open at http://localhost:3000
+
+### Production Build
 ```bash
-# Check if MongoDB is running
-mongosh --eval "db.adminCommand('ismaster')"
+cd frontend
+yarn build
 ```
+
+The build folder will contain the static files ready for deployment.
 
 ## 🌐 Accessing the Application
 
-After starting all services:
+After starting the development server:
 
-- **Frontend (Portfolio Website):** http://localhost:3000
-- **Backend API:** http://localhost:8001
-- **API Documentation:** http://localhost:8001/docs
-- **MongoDB:** mongodb://localhost:27017
+- **Portfolio Website:** http://localhost:3000
 
 ## 📁 Project Structure
 
