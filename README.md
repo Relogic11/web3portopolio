@@ -282,32 +282,64 @@ If you encounter issues:
    yarn list --depth=0
    ```
 
-## 📚 API Documentation
-
-Once the backend is running, visit http://localhost:8001/docs for interactive API documentation powered by FastAPI's automatic OpenAPI generation.
-
-### Main API Endpoints
-- `GET /api/` - Health check
-- `POST /api/status` - Create status check
-- `GET /api/status` - Get status checks
-
 ## 🚀 Deployment
 
-### Environment Setup for Production
-1. Update environment variables for production
-2. Build frontend: `cd frontend && yarn build`
-3. Set up reverse proxy (nginx recommended)
-4. Configure SSL certificates
-5. Set up process manager (PM2 or supervisor)
-6. Configure MongoDB for production
+### Static Hosting (Recommended for Portfolio)
 
-### Docker Deployment (Optional)
-```bash
-# Build Docker images
-docker-compose build
+#### Netlify
+1. Build your project:
+   ```bash
+   cd frontend
+   yarn build
+   ```
+2. Connect your GitHub repo to Netlify
+3. Set build command: `cd frontend && yarn build`
+4. Set publish directory: `frontend/build`
 
-# Run containers
-docker-compose up -d
+#### Vercel
+1. Install Vercel CLI:
+   ```bash
+   npm i -g vercel
+   ```
+2. Deploy:
+   ```bash
+   cd frontend
+   yarn build
+   vercel --prod
+   ```
+
+#### GitHub Pages
+1. Install gh-pages:
+   ```bash
+   cd frontend
+   yarn add --dev gh-pages
+   ```
+2. Add to package.json:
+   ```json
+   {
+     "homepage": "https://yourusername.github.io/portfolio-website",
+     "scripts": {
+       "predeploy": "yarn build",
+       "deploy": "gh-pages -d build"
+     }
+   }
+   ```
+3. Deploy:
+   ```bash
+   yarn deploy
+   ```
+
+### Custom Domain Setup
+1. Build and deploy to your preferred platform
+2. Configure DNS settings
+3. Set up SSL certificate (usually automatic with modern hosting)
+
+### Environment Variables for Production
+Update `.env` for production if needed:
+```env
+# Frontend .env
+GENERATE_SOURCEMAP=false
+# Add any production-specific variables
 ```
 
 ## 📄 License
