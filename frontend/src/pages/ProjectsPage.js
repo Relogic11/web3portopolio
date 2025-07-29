@@ -177,7 +177,7 @@ const ProjectsPage = () => {
                     <div className="mt-auto pt-4 border-t border-current/20">
                       <div className="flex items-center justify-between">
                         <div className="text-sm font-semibold opacity-90">
-                          Read Technical Journey
+                          Technical Implementation
                         </div>
                         <ArrowRight 
                           size={18} 
