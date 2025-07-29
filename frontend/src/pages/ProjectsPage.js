@@ -73,7 +73,8 @@ const ProjectsPage = () => {
               All Projects
             </h1>
             <p className="text-xl lg:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-              Complete collection of client work and technical implementations. Click any project to read the detailed technical journey.
+              Complete collection of client work and technical implementations. 
+              Showcasing diverse technology solutions and development expertise.
             </p>
           </motion.div>
         </div>
