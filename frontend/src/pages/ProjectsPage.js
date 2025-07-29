@@ -115,12 +115,12 @@ const ProjectsPage = () => {
                     {/* Project Header */}
                     <div className="mb-6">
                       <div className="flex items-start justify-between mb-4">
-                        <h3 className="text-2xl font-bold group-hover:scale-105 transition-transform duration-200">
+                        <h3 className="text-2xl font-bold">
                           {project.title}
                         </h3>
                         <ExternalLink 
                           size={20} 
-                          className="opacity-60 group-hover:opacity-100 group-hover:rotate-12 transition-all duration-200" 
+                          className="opacity-60" 
                         />
                       </div>
                       
