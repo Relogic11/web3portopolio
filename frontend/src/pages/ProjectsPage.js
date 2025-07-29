@@ -196,14 +196,14 @@ const ProjectsPage = () => {
               className="text-center mt-16 bg-gray-50 rounded-2xl p-8"
             >
               <h3 className="text-2xl font-bold text-black mb-4">
-                Want to Read the Full Technical Stories?
+                Complete Project Portfolio
               </h3>
               <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Each project has a detailed blog post covering technical challenges, architecture decisions, 
-                and lessons learned. Click any project above to dive into the development journey.
+                Each project showcases technical innovation, problem-solving approaches, and impact delivery.
+                From AI/ML systems to blockchain solutions, exploring diverse technology implementations.
               </p>
               <p className="text-sm text-gray-500">
-                Blog posts include NDA-safe technical insights, code examples, and problem-solving approaches.
+                Projects include technical architecture, challenges overcome, and measurable business outcomes.
               </p>
             </motion.div>
           </motion.div>
