@@ -165,7 +165,7 @@ const ProjectsPage = () => {
                         {project.categories.map((category, categoryIndex) => (
                           <span 
                             key={categoryIndex}
-                            className="px-3 py-1 text-xs rounded-full bg-current text-white opacity-80 group-hover:opacity-100 transition-opacity duration-200"
+                            className="px-3 py-1 text-xs rounded-full bg-current text-white opacity-80"
                           >
                             {category}
                           </span>
