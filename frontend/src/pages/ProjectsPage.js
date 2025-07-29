@@ -49,11 +49,7 @@ const ProjectsPage = () => {
     return colorMap[bgColor] || 'bg-gray-100 text-black';
   };
 
-  const handleProjectClick = (projectId) => {
-    // TODO: Redirect to blog post when blog system is implemented
-    // For now, we'll show an alert
-    alert(`Will redirect to blog post about project: ${projects.find(p => p.id === projectId)?.title}`);
-  };
+
 
   return (
     <div className="min-h-screen bg-white">
