@@ -224,7 +224,7 @@ const ProjectsPage = () => {
                   {/* Technologies Section */}
                   <div className="mt-8 pt-8 border-t border-gray-200">
                     <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                      Dari segi teknologi, proyek ini dibangun di atas fondasi yang kokoh:
+                      Technology foundation built on robust architecture:
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {project.technologies.map((tech, techIndex) => (
