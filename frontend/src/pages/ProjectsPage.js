@@ -127,19 +127,19 @@ const ProjectsPage = () => {
                     {project.id === 1 && (
                       <>
                         <p className="text-xl text-gray-600 mb-6">
-                          Di tengah dinamika pasar kripto yang tak henti, kami memperkenalkan <strong>{project.title}</strong>—sebuah sistem trading otonom yang dirancang untuk mengoptimalkan profitabilitas dan efisiensi. Proyek ini dibangun dalam {project.timeline} untuk klien {project.clientType} dan telah menunjukkan dampak signifikan, berhasil {project.impact.toLowerCase()}.
+                          In the dynamic world of cryptocurrency trading, we introduce the <strong>{project.title}</strong>—an autonomous trading system designed to optimize profitability and efficiency. This project was built over {project.timeline} for {project.clientType} and has demonstrated significant impact, successfully {project.impact.toLowerCase()}.
                         </p>
                         
                         <p>
-                          Inti dari sistem ini adalah penggunaan <strong>reinforcement learning</strong> canggih, memungkinkan bot untuk terus belajar dan beradaptasi dengan kondisi pasar yang selalu berubah. Kemampuannya diperkuat dengan analisis pasar real-time yang mendalam, memanfaatkan WebSocket untuk mendapatkan data seketika.
+                          The core of this system lies in advanced <strong>reinforcement learning</strong>, enabling the bot to continuously learn and adapt to ever-changing market conditions. Its capabilities are enhanced by deep real-time market analysis, leveraging WebSocket for instantaneous data feeds.
                         </p>
                         
                         <p>
-                          Salah satu fitur kunci bot ini adalah <strong>strategi arbitrase multi-bursa</strong>. Ini memungkinkannya untuk secara otomatis mendeteksi dan memanfaatkan perbedaan harga aset kripto di berbagai exchange, memaksimalkan peluang keuntungan.
+                          One of the bot's key features is its <strong>multi-exchange arbitrage strategy</strong>. This allows it to automatically detect and exploit price differences of crypto assets across various exchanges, maximizing profit opportunities.
                         </p>
                         
                         <p>
-                          Ecosystem bot ini mewakili langkah maju dalam perdagangan kripto, menggabungkan kecerdasan buatan dengan kecepatan eksekusi untuk kinerja yang superior.
+                          This ecosystem bot represents a significant advancement in crypto trading, combining artificial intelligence with execution speed for superior performance.
                         </p>
                       </>
                     )}
