@@ -105,7 +105,7 @@ const ProjectsPage = () => {
                     </div>
                     
                     <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                      {project.title}: Revolusi Teknologi Terdepan
+                      {project.title}
                     </h2>
                     
                     <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600 mb-6">
