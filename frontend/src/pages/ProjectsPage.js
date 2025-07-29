@@ -147,19 +147,19 @@ const ProjectsPage = () => {
                     {project.id === 2 && (
                       <>
                         <p className="text-xl text-gray-600 mb-6">
-                          Dalam era urbanisasi yang pesat, <strong>{project.title}</strong> hadir sebagai solusi komprehensif untuk tantangan kota modern. Dikembangkan selama {project.timeline} untuk {project.clientType}, sistem ini berhasil mencapai {project.impact.toLowerCase()}.
+                          In the era of rapid urbanization, <strong>{project.title}</strong> emerges as a comprehensive solution for modern city challenges. Developed over {project.timeline} for {project.clientType}, this system successfully achieved {project.impact.toLowerCase()}.
                         </p>
                         
                         <p>
-                          Infrastruktur IoT ini menggabungkan lebih dari 200 sensor yang tersebar di seluruh kota untuk memantau aliran lalu lintas, kualitas udara, tingkat kebisingan, dan kepadatan pejalan kaki. Setiap sensor dilengkapi dengan kemampuan edge computing untuk pemrosesan data real-time.
+                          This IoT infrastructure integrates over 200 sensors distributed throughout the city to monitor traffic flow, air quality, noise levels, and pedestrian density. Each sensor is equipped with edge computing capabilities for real-time data processing.
                         </p>
                         
                         <p>
-                          Sistem ini menggunakan <strong>predictive analytics</strong> untuk optimasi lalu lintas dan peringatan lingkungan. Algoritma machine learning yang terintegrasi mampu memprediksi pola lalu lintas dan memberikan rekomendasi rute alternatif secara otomatis.
+                          The system utilizes <strong>predictive analytics</strong> for traffic optimization and environmental alerts. Integrated machine learning algorithms can predict traffic patterns and automatically provide alternative route recommendations.
                         </p>
                         
                         <p>
-                          Dengan arsitektur LoRaWAN dan protokol MQTT, sistem ini menjamin komunikasi yang efisien dan andal antar sensor, menciptakan ekosistem kota pintar yang responsif dan berkelanjutan.
+                          With LoRaWAN architecture and MQTT protocols, this system ensures efficient and reliable communication between sensors, creating a responsive and sustainable smart city ecosystem.
                         </p>
                       </>
                     )}
