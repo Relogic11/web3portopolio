@@ -127,7 +127,7 @@ const ProjectsPage = () => {
                     {project.id === 1 && (
                       <>
                         <p className="text-xl text-gray-600 mb-6">
-                          In the dynamic world of cryptocurrency trading, we introduce the <strong>{project.title}</strong>—an autonomous trading system designed to optimize profitability and efficiency. This project was built over {project.timeline} for {project.clientType} and has demonstrated significant impact, successfully {project.impact.toLowerCase()}.
+                          In the dynamic world of cryptocurrency trading, we introduce the <strong>{project.title}</strong>, an autonomous trading system designed to optimize profitability and efficiency. This project was built over {project.timeline} for {project.clientType} and has demonstrated significant impact, successfully {project.impact.toLowerCase()}.
                         </p>
                         
                         <p>
