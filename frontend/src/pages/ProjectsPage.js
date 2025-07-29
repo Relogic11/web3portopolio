@@ -167,19 +167,19 @@ const ProjectsPage = () => {
                     {project.id === 3 && (
                       <>
                         <p className="text-xl text-gray-600 mb-6">
-                          Di era digital yang mengutamakan privasi, <strong>{project.title}</strong> menawarkan paradigma baru dalam verifikasi identitas. Dibangun selama {project.timeline} untuk {project.clientType}, platform ini telah melayani {project.impact.toLowerCase()}.
+                          In the digital era that prioritizes privacy, <strong>{project.title}</strong> offers a new paradigm in identity verification. Built over {project.timeline} for {project.clientType}, this platform has successfully served {project.impact.toLowerCase()}.
                         </p>
                         
                         <p>
-                          Platform ini menggunakan teknologi <strong>zero-knowledge proofs (zk-SNARKs)</strong> yang revolusioner, memungkinkan verifikasi identitas tanpa mengungkapkan informasi pribadi yang sensitif. Setiap identitas disimpan secara terdesentralisasi dengan enkripsi tingkat militer.
+                          This platform utilizes revolutionary <strong>zero-knowledge proofs (zk-SNARKs)</strong> technology, enabling identity verification without revealing sensitive personal information. Each identity is stored decentralized with military-grade encryption.
                         </p>
                         
                         <p>
-                          Fitur unggulan platform ini adalah <strong>cross-chain identity portability</strong>, memungkinkan pengguna menggunakan identitas yang sama di berbagai blockchain dan protokol DeFi. Sistem reputation scoring yang terintegrasi memberikan nilai tambah untuk ekosistem keuangan terdesentralisasi.
+                          The platform's flagship feature is <strong>cross-chain identity portability</strong>, allowing users to use the same identity across various blockchains and DeFi protocols. An integrated reputation scoring system provides added value for the decentralized finance ecosystem.
                         </p>
                         
                         <p>
-                          Dengan arsitektur yang kompatibel dengan Polygon dan integrasi IPFS untuk penyimpanan data terdesentralisasi, platform ini menjadi jembatan antara privasi pengguna dan transparansi blockchain.
+                          With an architecture compatible with Polygon and IPFS integration for decentralized data storage, this platform bridges user privacy and blockchain transparency.
                         </p>
                       </>
                     )}
