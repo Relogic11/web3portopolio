@@ -107,8 +107,8 @@ const ProjectsPage = () => {
                 >
                   {/* Background Pattern */}
                   <div className="absolute inset-0 opacity-10">
-                    <div className="absolute top-4 right-4 w-20 h-20 border border-current rounded-full group-hover:rotate-45 transition-transform duration-300"></div>
-                    <div className="absolute bottom-4 left-4 w-12 h-12 bg-current rounded-full group-hover:scale-110 transition-transform duration-300"></div>
+                    <div className="absolute top-4 right-4 w-20 h-20 border border-current rounded-full"></div>
+                    <div className="absolute bottom-4 left-4 w-12 h-12 bg-current rounded-full"></div>
                   </div>
 
                   <div className="relative z-10">
