@@ -151,35 +151,50 @@ portfolio-website/
 
 ## 🔧 Development Workflow
 
-### Frontend Development
+### Development Commands
 ```bash
 cd frontend
-yarn start          # Start development server with hot reload
-yarn build          # Build for production
-yarn test           # Run tests
+
+# Start development server with hot reload
+yarn start
+
+# Build for production
+yarn build
+
+# Run tests (if configured)
+yarn test
+
+# Check for linting issues
+yarn lint
+
+# Auto-fix linting issues
+yarn lint:fix
 ```
 
-### Backend Development
-```bash
-cd backend
-source venv/bin/activate  # Activate virtual environment
-uvicorn server:app --reload  # Start with auto-reload
-```
+### Code Structure
+- **Components** - Reusable UI components in `/src/components/`
+- **Pages** - Route-based page components in `/src/pages/`
+- **Data** - Static content and configuration in `/src/data/mock.js`
+- **Styles** - Tailwind classes and custom CSS in components
 
-### Code Formatting & Linting
-```bash
-# Backend
-cd backend
-black .             # Format Python code
-isort .             # Sort imports
-flake8 .            # Check for style issues
-mypy .              # Type checking
+### Customizing Content
 
-# Frontend  
-cd frontend
-yarn lint           # ESLint checking
-yarn lint:fix       # Auto-fix linting issues
-```
+#### 1. Personal Information
+Edit `/src/data/mock.js` to update:
+- Personal details and bio
+- Skills and expertise
+- Project information
+- Contact information
+
+#### 2. Styling
+- Use Tailwind CSS classes for styling
+- Custom styles in component files
+- Global styles in `App.css`
+
+#### 3. Components
+- Modify existing components in `/src/components/`
+- Add new components as needed
+- Update routing in `App.js`
 
 ## 📱 Features
 
