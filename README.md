@@ -129,31 +129,25 @@ portfolio-website/
 ## 🛠 Technology Stack
 
 ### Frontend
-- **React 19.0.0** - Modern React with hooks
-- **React Router 7.5.1** - Client-side routing
+- **React 19.0.0** - Modern React with hooks and latest features
+- **React Router 7.5.1** - Client-side routing for SPA navigation
 - **Tailwind CSS 3.4.17** - Utility-first CSS framework
-- **Framer Motion 12.23.9** - Smooth animations
-- **Radix UI** - Accessible UI components
-- **Lucide React** - Beautiful icons
-- **Axios 1.8.4** - HTTP client
-
-### Backend
-- **FastAPI 0.110.1** - Modern Python web framework
-- **Python 3.11+** - Programming language
-- **Motor 3.3.1** - Async MongoDB driver
-- **PyMongo 4.5.0** - MongoDB driver
-- **Pydantic** - Data validation
-- **Uvicorn** - ASGI server
-
-### Database
-- **MongoDB** - NoSQL document database
+- **Framer Motion 12.23.9** - Smooth animations and transitions
+- **Radix UI** - Accessible, unstyled UI components
+- **Lucide React** - Beautiful, customizable icons
+- **Embla Carousel** - Touch-friendly carousel component
 
 ### Development Tools
-- **Yarn** - Package manager
+- **Yarn 1.22+** - Fast and reliable package manager
 - **CRACO** - Create React App Configuration Override
-- **ESLint** - JavaScript linting
-- **PostCSS** - CSS processing
-- **Autoprefixer** - CSS vendor prefixes
+- **ESLint** - JavaScript linting and code quality
+- **PostCSS** - CSS processing and optimization
+- **Autoprefixer** - Automatic vendor prefixes
+
+### Build & Deployment
+- **Create React App** - React development environment
+- **Webpack** - Module bundler (via CRA)
+- **Babel** - JavaScript transpiler (via CRA)
 
 ## 🔧 Development Workflow
 
