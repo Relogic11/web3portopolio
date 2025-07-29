@@ -83,24 +83,12 @@ const ProjectsPage = () => {
       {/* Projects Grid */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 lg:px-8">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            className="max-w-7xl mx-auto"
-          >
+          <div className="max-w-7xl mx-auto">
             {/* Projects Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (
-                <motion.div
+                <div
                   key={project.id}
-                  variants={itemVariants}
-                  whileHover={{ 
-                    y: -8,
-                    scale: 1.02,
-                    transition: { duration: 0.2 } 
-                  }}
                   className={clsx(
                     'project-card rounded-2xl p-6 h-full flex flex-col justify-between overflow-hidden relative shadow-lg hover:shadow-xl transition-all duration-300',
                     getCardStyles(project.bgColor)
