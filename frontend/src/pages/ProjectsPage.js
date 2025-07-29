@@ -100,9 +100,8 @@ const ProjectsPage = () => {
                     scale: 1.02,
                     transition: { duration: 0.2 } 
                   }}
-                  onClick={() => handleProjectClick(project.id)}
                   className={clsx(
-                    'project-card rounded-2xl p-6 h-full flex flex-col justify-between cursor-pointer group overflow-hidden relative shadow-lg hover:shadow-xl transition-all duration-300',
+                    'project-card rounded-2xl p-6 h-full flex flex-col justify-between overflow-hidden relative shadow-lg hover:shadow-xl transition-all duration-300',
                     getCardStyles(project.bgColor)
                   )}
                 >
