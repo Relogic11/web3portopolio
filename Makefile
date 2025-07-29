@@ -1,120 +1,86 @@
-# Portfolio Website Makefile
-# Makes installation and development easier
+# Static Portfolio Website Makefile
+# Makes development and deployment easier
 
-.PHONY: help install install-backend install-frontend start start-backend start-frontend stop restart clean test
+.PHONY: help install start build deploy clean dev health
 
 # Default target
 help:
-	@echo "Portfolio Website - Development Commands"
-	@echo "======================================="
-	@echo "make install         - Install all dependencies"
-	@echo "make start          - Start all services"
-	@echo "make stop           - Stop all services"
-	@echo "make restart        - Restart all services"
+	@echo "Static Portfolio Website - Development Commands"
+	@echo "=============================================="
+	@echo "make install         - Install dependencies"
+	@echo "make start          - Start development server"
+	@echo "make build          - Build for production"
+	@echo "make deploy         - Deploy to GitHub Pages"
 	@echo "make clean          - Clean caches and temp files"
-	@echo "make test           - Run tests"
-	@echo "make install-backend - Install only backend dependencies"
-	@echo "make install-frontend - Install only frontend dependencies"
-	@echo "make start-backend   - Start only backend service"
-	@echo "make start-frontend  - Start only frontend service"
+	@echo "make dev            - Full development setup"
+	@echo "make health         - Check if dev server is running"
 
-# Install all dependencies
-install: install-backend install-frontend
-	@echo "✅ All dependencies installed successfully!"
-
-# Install backend dependencies
-install-backend:
-	@echo "📦 Installing backend dependencies..."
-	cd backend && pip install -r requirements.txt
-
-# Install frontend dependencies  
-install-frontend:
-	@echo "📦 Installing frontend dependencies..."
+# Install dependencies
+install:
+	@echo "📦 Installing dependencies..."
 	cd frontend && yarn install
+	@echo "✅ Dependencies installed successfully!"
 
-# Start all services
+# Start development server
 start:
-	@echo "🚀 Starting all services..."
-	sudo supervisorctl restart all
-	@echo "✅ Services started!"
-	@echo "Frontend: http://localhost:3000"
-	@echo "Backend API: http://localhost:8001"
-	@echo "API Docs: http://localhost:8001/docs"
+	@echo "🚀 Starting development server..."
+	cd frontend && yarn start
 
-# Start only backend
-start-backend:
-	@echo "🚀 Starting backend service..."
-	sudo supervisorctl restart backend
-
-# Start only frontend
-start-frontend:  
-	@echo "🚀 Starting frontend service..."
-	sudo supervisorctl restart frontend
-
-# Stop all services
-stop:
-	@echo "⏹️  Stopping all services..."
-	sudo supervisorctl stop all
-
-# Restart all services
-restart:
-	@echo "🔄 Restarting all services..."
-	sudo supervisorctl restart all
-	@echo "✅ Services restarted!"
-
-# Clean caches and temporary files
-clean:
-	@echo "🧹 Cleaning caches and temporary files..."
-	# Clean Python cache
-	find backend -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
-	find backend -name "*.pyc" -delete 2>/dev/null || true
-	# Clean Node cache
-	cd frontend && yarn cache clean
-	@echo "✅ Cleanup completed!"
-
-# Run tests
-test:
-	@echo "🧪 Running tests..."
-	# Backend tests
-	cd backend && python -m pytest
-	# Frontend tests  
-	cd frontend && yarn test --watchAll=false
-	@echo "✅ Tests completed!"
-
-# Check status of all services
-status:
-	@echo "📊 Service Status:"
-	sudo supervisorctl status
-
-# View logs
-logs:
-	@echo "📋 Recent logs:"
-	@echo "Backend logs:"
-	tail -n 20 /var/log/supervisor/backend.*.log
-	@echo "\nFrontend logs:"
-	sudo supervisorctl tail frontend
-
-# Development setup (first time setup)
-dev-setup: install
-	@echo "🛠️  Setting up development environment..."
-	# Create necessary directories if they don't exist
-	mkdir -p logs
-	# Set up git hooks if needed
-	@echo "✅ Development environment ready!"
-	@echo "Run 'make start' to begin development"
-
-# Production build
+# Build for production
 build:
 	@echo "🏗️  Building for production..."
 	cd frontend && yarn build
 	@echo "✅ Production build completed!"
+	@echo "📁 Build files are in frontend/build/"
 
-# Quick health check
+# Deploy to GitHub Pages (requires gh-pages setup)
+deploy: build
+	@echo "🚀 Deploying to GitHub Pages..."
+	cd frontend && yarn deploy
+	@echo "✅ Deployed successfully!"
+
+# Clean caches and temporary files
+clean:
+	@echo "🧹 Cleaning caches and temporary files..."
+	# Clean Node cache and build files
+	cd frontend && yarn cache clean
+	cd frontend && rm -rf build node_modules/.cache
+	@echo "✅ Cleanup completed!"
+
+# Full development setup (first time)
+dev: install
+	@echo "🛠️  Setting up development environment..."
+	@echo "✅ Development environment ready!"
+	@echo "Run 'make start' to begin development"
+
+# Check if development server is running
 health:
 	@echo "🔍 Health Check:"
-	@echo -n "Backend API: "
-	@curl -s http://localhost:8001/api/ >/dev/null 2>&1 && echo "✅ Online" || echo "❌ Offline"
-	@echo -n "Frontend: "
+	@echo -n "Development Server: "
 	@curl -s http://localhost:3000 >/dev/null 2>&1 && echo "✅ Online" || echo "❌ Offline"
-	@echo -n "MongoDB: "
-	@mongosh --quiet --eval "db.adminCommand('ismaster')" >/dev/null 2>&1 && echo "✅ Online" || echo "❌ Offline"
+
+# Quick development restart
+restart:
+	@echo "🔄 Use Ctrl+C to stop current server, then run 'make start'"
+
+# Test the build
+test-build: build
+	@echo "🧪 Testing production build..."
+	cd frontend/build && python3 -m http.server 8000 &
+	@echo "✅ Test server running at http://localhost:8000"
+	@echo "Press Ctrl+C to stop"
+
+# Install deployment dependencies
+setup-deploy:
+	@echo "🔧 Setting up deployment tools..."
+	cd frontend && yarn add --dev gh-pages
+	@echo "✅ Deployment tools installed!"
+	@echo "ℹ️  Add homepage and deploy scripts to package.json"
+
+# Check project status
+status:
+	@echo "📊 Project Status:"
+	@echo "Node.js version: $$(node --version)"
+	@echo "Yarn version: $$(yarn --version)"
+	@echo "Frontend dependencies: $$(cd frontend && yarn list --depth=0 2>/dev/null | wc -l) packages"
+	@echo "Build status: $$(test -d frontend/build && echo "✅ Built" || echo "❌ Not built")"
