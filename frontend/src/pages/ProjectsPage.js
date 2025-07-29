@@ -193,8 +193,8 @@ const ProjectsPage = () => {
               <p className="text-sm text-gray-500">
                 Projects include technical architecture, challenges overcome, and measurable business outcomes.
               </p>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
