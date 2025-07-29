@@ -181,7 +181,7 @@ const ProjectsPage = () => {
                         </div>
                         <ArrowRight 
                           size={18} 
-                          className="opacity-60 group-hover:translate-x-2 group-hover:opacity-100 transition-all duration-200" 
+                          className="opacity-60" 
                         />
                       </div>
                     </div>
