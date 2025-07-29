@@ -220,84 +220,66 @@ Edit `/src/data/mock.js` to update:
 
 #### 1. Port Already in Use
 ```bash
-# Kill process using port 3000 (frontend)
+# Kill process using port 3000
 lsof -ti:3000 | xargs kill -9
 
-# Kill process using port 8001 (backend)  
-lsof -ti:8001 | xargs kill -9
-
-# Kill process using port 27017 (MongoDB)
-lsof -ti:27017 | xargs kill -9
+# Or use different port
+yarn start --port 3001
 ```
 
-#### 2. MongoDB Connection Issues
-```bash
-# Check if MongoDB is running
-ps aux | grep mongod
-
-# Start MongoDB manually
-mongod --dbpath /path/to/your/data/directory
-
-# Check MongoDB logs
-tail -f /var/log/mongodb/mongod.log
-```
-
-#### 3. Node Modules Issues
+#### 2. Node Modules Issues
 ```bash
 cd frontend
 rm -rf node_modules yarn.lock
 yarn install
 ```
 
-#### 4. Python Dependencies Issues
+#### 3. Dependencies Issues
 ```bash
-cd backend
-pip install --upgrade pip
-pip install -r requirements.txt --force-reinstall
+cd frontend
+yarn install --check-files
+# or
+yarn install --force
 ```
 
-#### 5. CORS Issues
-Ensure your backend .env has correct CORS settings:
-```env
-ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
+#### 4. Build Errors
+```bash
+# Clear build cache
+cd frontend
+rm -rf build
+yarn build
+
+# Check for TypeScript errors if using TS
+yarn build --verbose
 ```
 
-#### 6. Environment Variables Not Loading
-- Verify .env files exist in both frontend and backend directories
-- Check file names are exactly `.env` (not .env.txt)
-- Restart servers after changing environment variables
+#### 5. Styling Not Working
+- Ensure Tailwind CSS is properly configured in `tailwind.config.js`
+- Check if PostCSS is processing styles correctly
+- Verify class names are not being purged in production
+
+#### 6. Hot Reload Not Working
+- Check if `WDS_SOCKET_PORT` is set in `.env`
+- Restart development server
+- Clear browser cache
 
 ### Getting Help
 
 If you encounter issues:
 
-1. **Check the logs:**
-   ```bash
-   # Backend logs
-   tail -f /var/log/supervisor/backend.err.log
-   
-   # Frontend logs (check terminal output)
-   # MongoDB logs
-   tail -f /var/log/mongodb/mongod.log
-   ```
-
-2. **Verify all services are running:**
-   ```bash
-   # Check if all processes are running
-   ps aux | grep -E "(node|python|mongod)"
-   
-   # Check ports
-   netstat -tlnp | grep -E "(3000|8001|27017)"
-   ```
-
+1. **Check the browser console** for JavaScript errors
+2. **Check terminal output** for build errors
 3. **Clear caches:**
    ```bash
-   # Clear browser cache
-   # Clear Node modules cache
+   # Clear browser cache and reload
+   # Clear yarn cache
    cd frontend && yarn cache clean
-   
-   # Clear Python cache
-   cd backend && find . -type d -name __pycache__ -delete
+   ```
+
+4. **Verify dependencies:**
+   ```bash
+   cd frontend
+   yarn list --depth=0
    ```
 
 ## 📚 API Documentation
