@@ -1,23 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Code, Zap, Users, Target, Star } from 'lucide-react';
+import { Users, Target, Star } from 'lucide-react';
 
 const TestimonialsSection = () => {
   const achievements = [
     {
-      icon: <Award size={40} />,
       title: "Technical Excellence",
       description: "Specialized in cutting-edge technologies like AI, blockchain, and IoT systems",
       highlight: "8+ Years Experience"
     },
     {
-      icon: <Code size={40} />,
       title: "Innovation Focus", 
       description: "Built revolutionary systems from AI trading bots to quantum-safe messaging",
       highlight: "100+ Projects Completed"
     },
     {
-      icon: <Zap size={40} />,
       title: "Performance Driven",
       description: "Delivered high-performance solutions with optimal efficiency and reliability",
       highlight: "Industry Leading Results"
@@ -70,9 +67,6 @@ const TestimonialsSection = () => {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300"
               >
-                <div className="text-black mb-6 flex justify-center">
-                  {achievement.icon}
-                </div>
                 <h3 className="text-2xl font-bold text-black mb-4 text-center">
                   {achievement.title}
                 </h3>

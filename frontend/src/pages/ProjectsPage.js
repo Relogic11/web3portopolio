@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import { projects } from '../data/mock';
 import { ExternalLink, ArrowRight, Calendar } from 'lucide-react';
 import clsx from 'clsx';
+import TechIcon from '../components/TechIcon';
 
 const ProjectsPage = () => {
   const containerVariants = {
@@ -228,8 +229,10 @@ const ProjectsPage = () => {
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {project.technologies.map((tech, techIndex) => (
-                        <div key={techIndex} className="flex items-center p-3 bg-gray-50 rounded-lg">
-                          <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                        <div key={techIndex} className="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+                          <div className="w-8 h-8 bg-white rounded-full mr-3 flex items-center justify-center shadow-sm">
+                            <TechIcon name={tech} size={16} />
+                          </div>
                           <span className="font-mono text-sm font-medium text-gray-700">{tech}</span>
                           <span className="ml-auto text-xs text-gray-500">Core Technology</span>
                         </div>

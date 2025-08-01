@@ -2,16 +2,16 @@
 
 export const personalInfo = {
   name: "Allen Elzayn",
-  title: "Full-Stack Developer & Tech Team Lead",
+  title: "System Architect & Tech Lead",
   tagline: "Building Tomorrow's Technology Today - From AI & Blockchain to E-commerce & UMKM Solutions",
   shortBio: "Cross-disciplinary technology innovator with 8+ years of experience leading specialized development teams to build solutions from cutting-edge AI and blockchain systems to practical e-commerce and business management platforms. Started coding at age 9 and have been building breakthrough technology solutions ever since. Leading a focused team of 4 specialists: AI/ML Engineer, Blockchain Developer, Full-Stack Developer, and Mobile/IoT Specialist.",
   bio: "My journey into technology began when I was just 9 years old, driven by an insatiable curiosity about how things work and a desire to create something meaningful. What started as simple HTML pages quickly evolved into a passion for solving complex problems through code. By age 12, I had built my first neural network using Python and NumPy - not because I understood all the math, but because I was fascinated by the idea of machines that could learn.\n\nThroughout my teenage years, I immersed myself in every programming language I could find. Late nights were spent reading documentation, debugging code, and building projects that no one asked for but that taught me invaluable lessons. I won several national programming competitions, not just for the recognition, but because they pushed me to think differently and solve problems under pressure.\n\nThe transition from hobby to profession wasn't just about mastering technology - it was about understanding that great software serves people, not the other way around. This philosophy has guided every project I've undertaken, from building trading bots that handle millions in transactions to creating simple POS systems for local warung owners.\n\nToday, I lead a specialized team of 4 experts: an AI/ML Engineer, Blockchain Developer, Full-Stack Developer, and Mobile/IoT Specialist. Together, we bridge the gap between cutting-edge innovation and real-world business needs. Whether it's implementing quantum-safe cryptography for security firms or building e-commerce platforms for local businesses, the core mission remains the same: use technology to create meaningful impact.\n\nWhat drives me most is the continuous learning curve. Technology evolves rapidly, and staying ahead means never stopping to learn. Every project teaches something new, every challenge demands creative solutions, and every client brings unique perspectives that expand my understanding. This isn't just work - it's a never-ending journey of growth, innovation, and problem-solving that gets more exciting with each passing year.",
-  email: "allen.elzayn@email.com",
-  phone: "+62 812-3456-7890",
-  location: "Jakarta, Indonesia",
+  email: "hi@allenarch.dev",
+  phone: "+65 9095 7469",
+  location: "Tanglin, Singapore",
   linkedin: "https://linkedin.com/in/allenelzayn",
   github: "https://github.com/allenelzayn",
-  website: "https://allenelzayn.dev"
+  website: "https://allenarch.dev"
 };
 
 export const skills = [
@@ -330,94 +330,81 @@ export const team = [
 
 export const experience = [
   {
-    company: "Independent Tech Innovator & Team Lead",
-    role: "Full-Stack Developer & AI Specialist",
-    period: "2021 - Present (Age 21-25)",
+    company: "Independent Technology Consultant",
+    role: "System Architect & Team Lead",
+    period: "2021 - Present",
+    location: "Tanglin, Singapore",
+    summary: "Leading breakthrough technology solutions with a specialized team of 4 experts across AI/ML, Blockchain, Full-Stack, and Mobile/IoT domains.",
+    keyMetrics: ["50+ Production Systems", "99.9% Uptime", "100% Client Retention"],
+    highlights: [
+      "Architected quantum-safe cryptography and brain-computer interface systems",
+      "Reduced project delivery time by 40% through scalable development processes",
+      "Built comprehensive client relationship management driving referral growth"
+    ]
+  },
+  {
+    company: "Independent Development & Consulting",
+    role: "Technology Consultant & System Developer", 
+    period: "2019 - 2021",
+    location: "Choa Chu Kang, Singapore",
+    summary: "Specialized in system architecture design and advanced AI/ML research including deep learning, computer vision, and edge computing implementations.",
+    keyMetrics: ["Complex System Design", "AI/ML Expertise", "Enterprise Solutions"],
+    highlights: [
+      "Developed proprietary real-time data processing algorithms",
+      "Deep expertise in AI/ML, computer vision, and LLM implementations",
+      "Scaled prototype systems to production-grade solutions"
+    ]
+  },
+  {
+    company: "Blockchain Innovation & Security",
+    role: "Lead Smart Contract Developer",
+    period: "2018 - 2019", 
+    location: "Remote (Global)",
+    summary: "Specialized in DeFi protocol development, security auditing, and cross-chain bridge solutions for blockchain startups.",
+    keyMetrics: ["20+ DeFi Protocols", "Zero Security Vulnerabilities", "Multi-Chain Support"],
+    highlights: [
+      "Built cross-chain bridges connecting Ethereum, Polygon, and BSC ecosystems",
+      "Established security-first practices adopted industry-wide",
+      "Optimized gas usage and automated testing frameworks"
+    ]
+  },
+  {
+    company: "Professional Development Foundation",
+    role: "Full-Stack Developer & Consultant",
+    period: "2017 - 2018", 
     location: "Jakarta, Indonesia",
-    achievements: [
-      "Leading a specialized team of 4 experts (AI/ML, Blockchain, Full-Stack, Mobile/IoT) in building breakthrough technology solutions", 
-      "Architected and deployed 50+ production systems across AI, blockchain, IoT, and web development with 99.9% uptime",
-      "Built advanced implementations in quantum-safe cryptography, brain-computer interfaces, and distributed computing systems",
-      "Established scalable development processes that reduced project delivery time by 40% while maintaining code quality",
-      "Built comprehensive client relationship management approach resulting in 100% client retention and referral growth"
+    summary: "Established professional reputation through diverse client projects, from e-commerce platforms to business management systems.",
+    keyMetrics: ["25+ Web Applications", "Ahead-of-Schedule Delivery", "Strong Client Network"],
+    highlights: [
+      "Mastered Laravel, React, and database optimization techniques",
+      "Created reusable component libraries accelerating future projects",
+      "Built foundation for transitioning to team-based operations"
     ]
   },
   {
-    company: "Advanced Technology Research & Development",
-    role: "Senior Systems Architect & Research Engineer", 
-    period: "2019 - 2021 (Age 19-21)",
-    location: "Jakarta, Indonesia (Remote + Local)",
-    achievements: [
-      "Led R&D initiatives in computer vision, edge AI, and IoT ecosystems for smart city and industrial automation projects",
-      "Developed proprietary algorithms for real-time data processing that improved system performance by 10x over standard solutions",
-      "Published research findings and contributed to open-source projects that gained 1000+ GitHub stars collectively",
-      "Mentored junior developers and established coding standards that became template for multiple development teams",
-      "Successfully scaled prototype systems from concept to handling 100K+ concurrent users in production environments"
-    ]
-  },
-  {
-    company: "Blockchain Innovation Lab",
-    role: "Lead Smart Contract Developer & Security Auditor",
-    period: "2018 - 2019 (Age 18-19)", 
-    location: "Remote (Global Clients)",
-    achievements: [
-      "Designed and deployed 20+ DeFi protocols with advanced security features and cross-chain compatibility",
-      "Conducted comprehensive smart contract audits resulting in zero security vulnerabilities in production systems",
-      "Built innovative cross-chain bridge solutions connecting Ethereum, Polygon, and Binance Smart Chain ecosystems",
-      "Established security-first development practices that became industry standard for multiple blockchain startups",
-      "Generated significant value for clients through gas optimization techniques and automated testing frameworks"
-    ]
-  },
-  {
-    company: "Freelance Development & Consulting",
-    role: "Full-Stack Developer & Technical Consultant",
-    period: "2017 - 2018 (Age 17-18)", 
-    location: "Jakarta, Indonesia",
-    achievements: [
-      "Built 30+ web applications ranging from e-commerce platforms to complex business management systems",
-      "Developed expertise in Laravel, React, and database optimization while working with diverse client requirements",
-      "Established reputation for delivering projects ahead of schedule with exceptional code quality and documentation",
-      "Created reusable component libraries and development frameworks that accelerated future project delivery",
-      "Built strong network of client relationships that provided foundation for scaling to team-based operations"
-    ]
-  },
-  {
-    company: "Continuous Learning & Skill Development",
+    company: "Intensive Learning & Growth",
     role: "Self-Directed Technology Explorer",
-    period: "2016 - 2017 (Age 16-17)", 
+    period: "2014 - 2017", 
     location: "Jakarta, Indonesia",
-    achievements: [
-      "Transitioned from basic programming knowledge to advanced full-stack development through intensive self-study",
-      "Completed 50+ online courses and tutorials covering everything from algorithms to advanced system design",
-      "Built 40+ personal projects exploring different technologies, frameworks, and programming paradigms",
-      "Participated in 15+ programming competitions and hackathons, winning several local and national events",
-      "Established GitHub presence with clean, well-documented code that demonstrated consistent learning progress"
+    summary: "Transformed from curious beginner to advanced developer through intensive self-study, competitions, and hands-on projects.",
+    keyMetrics: ["90+ Projects Built", "15+ Competition Wins", "Multiple Languages Mastered"],
+    highlights: [
+      "Built first neural network at age 12 using Python and NumPy",
+      "Won regional programming competitions while in middle school",
+      "Created first commercial website at age 13 for local business"
     ]
   },
   {
-    company: "Foundation Years - Early Programming Journey",
-    role: "Young Developer & Technology Enthusiast",
-    period: "2014 - 2016 (Age 14-16)", 
+    company: "The Foundation Years",
+    role: "Young Developer Discovery",
+    period: "2009 - 2014", 
     location: "Jakarta, Indonesia",
-    achievements: [
-      "Built first neural network implementation at age 12 using Python and NumPy, sparking lifelong passion for AI",
-      "Won multiple regional programming competitions while still in middle school, demonstrating natural aptitude",
-      "Created first commercial website at age 13 for local business, learning client communication and project management",
-      "Mastered fundamental programming concepts across multiple languages: Python, JavaScript, PHP, and Java",
-      "Developed problem-solving mindset and debugging skills through countless hours of experimental coding projects"
-    ]
-  },
-  {
-    company: "The Beginning - Discovery of Programming",
-    role: "Curious Child Learning to Code",
-    period: "2009 - 2014 (Age 9-14)", 
-    location: "Jakarta, Indonesia",
-    achievements: [
-      "Started programming journey at age 9 with simple HTML pages, driven by curiosity about how websites work",
-      "Progressed from HTML/CSS to JavaScript and PHP through self-directed learning and online resources",
-      "Built first interactive web applications including simple games and calculators for school projects",
-      "Built first neural network implementation at age 12 using Python and NumPy, demonstrating early AI interest",
-      "Established foundation of continuous learning and experimentation that would define entire career trajectory"
+    summary: "The beginning of an extraordinary journey - from simple HTML pages at age 9 to building interactive applications and neural networks.",
+    keyMetrics: ["Age 9 Start", "First Neural Network at 12", "Early Business Impact"],
+    highlights: [
+      "Started with HTML/CSS, progressed to JavaScript and PHP",
+      "Built interactive games and calculators for school projects",
+      "Established continuous learning mindset defining entire career"
     ]
   }
 ];

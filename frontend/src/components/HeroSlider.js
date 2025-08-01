@@ -1,9 +1,47 @@
 import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { heroSlides } from '../data/mock';
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Motion variants for smooth transitions
+  const slideVariants = {
+    enter: {
+      opacity: 0,
+      x: 100,
+    },
+    center: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    },
+    exit: {
+      opacity: 0,
+      x: -100,
+      transition: {
+        duration: 0.4,
+        ease: "easeIn"
+      }
+    }
+  };
+
+  const titleVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        delay: 0.2,
+        ease: "easeOut"
+      }
+    }
+  };
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -45,16 +83,34 @@ const HeroSlider = () => {
       <div className="container mx-auto px-4 lg:px-8 h-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 h-full items-center gap-8">
           {/* Left Column - Project Info */}
-          <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
-            <div className="space-y-4 opacity-90">
-              <div className="space-y-2">
-                <h2 className="text-xl lg:text-2xl font-normal">
-                  {currentProject.project.title}
-                </h2>
-                <p className="text-lg lg:text-xl font-normal opacity-80">
-                  {currentProject.project.description}
-                </p>
-              </div>
+          <AnimatePresence mode="wait">
+            <motion.div 
+              key={currentSlide}
+              variants={slideVariants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              className="space-y-6 lg:space-y-8 text-center lg:text-left"
+            >
+              <div className="space-y-4 opacity-90">
+                <div className="space-y-2">
+                  <motion.h2 
+                    variants={titleVariants}
+                    initial="hidden"
+                    animate="visible"
+                    className="text-xl lg:text-2xl font-normal"
+                  >
+                    {currentProject.project.title}
+                  </motion.h2>
+                  <motion.p 
+                    variants={titleVariants}
+                    initial="hidden"
+                    animate="visible"
+                    className="text-lg lg:text-xl font-normal opacity-80"
+                  >
+                    {currentProject.project.description}
+                  </motion.p>
+                </div>
               
               <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
                 {currentProject.project.categories.map((category, index) => (
@@ -71,19 +127,35 @@ const HeroSlider = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
+          </AnimatePresence>
 
           {/* Right Column - Brand Display */}
-          <div className="flex items-center justify-center lg:justify-end">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="flex items-center justify-center lg:justify-end"
+          >
             <div className="text-center">
-              <h1 className="font-display uppercase text-[8rem] md:text-[12rem] lg:text-[14rem] leading-none font-black opacity-80 animate-pulse">
+              <motion.h1 
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                className="font-display uppercase text-[8rem] md:text-[12rem] lg:text-[14rem] leading-none font-black opacity-80 animate-pulse"
+              >
                 Allen
-              </h1>
-              <p className="text-lg lg:text-xl font-mono uppercase tracking-widest opacity-60">
+              </motion.h1>
+              <motion.p 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                className="text-lg lg:text-xl font-mono uppercase tracking-widest opacity-60"
+              >
                 Tech Innovator
-              </p>
+              </motion.p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 

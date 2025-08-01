@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { personalInfo } from '../data/mock';
 import { Github, Linkedin, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
 
@@ -93,16 +94,17 @@ const Footer = () => {
               <h4 className="text-xl font-semibold mb-6">Quick Links</h4>
               <nav className="space-y-3">
                 {quickLinks.map((link, index) => (
-                  <a
+                  <Link
                     key={index}
-                    href={link.href}
+                    to={link.href}
                     className="block text-gray-400 hover:text-white hover:translate-x-2 transition-all duration-200 group"
+                    onClick={() => window.scrollTo(0, 0)}
                   >
                     <span className="flex items-center">
                       {link.name}
                       <ExternalLink size={14} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                     </span>
-                  </a>
+                  </Link>
                 ))}
               </nav>
             </motion.div>
@@ -145,13 +147,15 @@ const Footer = () => {
               </div>
 
               {/* CTA */}
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full mt-6 px-6 py-3 bg-white text-black font-mono uppercase text-sm tracking-wider rounded-full hover:bg-gray-200 transition-colors duration-200"
-              >
-                Start a Project
-              </motion.button>
+              <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="w-full mt-6 px-6 py-3 bg-white text-black font-mono uppercase text-sm tracking-wider rounded-full hover:bg-gray-200 transition-colors duration-200 cursor-pointer text-center"
+                >
+                  Start a Project
+                </motion.div>
+              </Link>
             </motion.div>
           </div>
         </div>

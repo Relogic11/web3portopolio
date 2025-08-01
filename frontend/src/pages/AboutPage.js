@@ -2,7 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import { personalInfo, experience, skills } from '../data/mock';
+import TechIcon from '../components/TechIcon';
+import { personalInfo, experience, skills } from '../data';
 import { Calendar, MapPin, Briefcase, Award } from 'lucide-react';
 
 const AboutPage = () => {
@@ -108,8 +109,9 @@ const AboutPage = () => {
                         {skillGroup.items.map((skill, skillIndex) => (
                           <span
                             key={skillIndex}
-                            className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full border hover:bg-black hover:text-white transition-all duration-200 cursor-pointer"
+                            className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full border hover:bg-black hover:text-white transition-all duration-200 cursor-pointer flex items-center gap-2"
                           >
+                            <TechIcon name={skill} size={16} className="flex-shrink-0" />
                             {skill}
                           </span>
                         ))}
@@ -126,50 +128,71 @@ const AboutPage = () => {
                 Professional Journey
               </h2>
 
-              <div className="space-y-8">
+              <div className="space-y-6">
                 {experience.map((job, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-50px" }}
-                    transition={{ duration: 0.4, delay: index * 0.05 }} // Reduced stagger
-                    className="relative bg-white border border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                    transition={{ duration: 0.4, delay: index * 0.05 }}
+                    className="relative bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
                   >
-                    <div className="absolute top-8 right-8 text-gray-400">
-                      <Calendar size={24} />
+                    <div className="absolute top-6 right-6 text-gray-400">
+                      <Calendar size={20} />
                     </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                      {/* Left Column - Role & Company */}
                       <div className="lg:col-span-1">
-                        <h3 className="text-xl font-bold text-black mb-2">
+                        <h3 className="text-lg font-bold text-black mb-1">
                           {job.role}
                         </h3>
-                        <p className="text-lg text-gray-600 mb-2">
+                        <p className="text-md text-gray-600 mb-2">
                           {job.company}
                         </p>
-                        <div className="flex items-center text-sm text-gray-500 mb-2">
-                          <Calendar size={16} className="mr-2" />
+                        <div className="flex items-center text-sm text-gray-500 mb-1">
+                          <Calendar size={14} className="mr-2" />
                           {job.period}
                         </div>
                         <div className="flex items-center text-sm text-gray-500">
-                          <MapPin size={16} className="mr-2" />
+                          <MapPin size={14} className="mr-2" />
                           {job.location}
                         </div>
                       </div>
 
+                      {/* Middle Column - Summary & Metrics */}
                       <div className="lg:col-span-2">
-                        <h4 className="font-semibold text-black mb-3">
-                          Key Achievements:
-                        </h4>
-                        <ul className="space-y-2">
-                          {job.achievements.map((achievement, achievementIndex) => (
-                            <li
-                              key={achievementIndex}
-                              className="flex items-start text-gray-700"
+                        <p className="text-gray-700 mb-4 leading-relaxed">
+                          {job.summary}
+                        </p>
+                        
+                        {/* Key Metrics */}
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          {job.keyMetrics.map((metric, metricIndex) => (
+                            <span
+                              key={metricIndex}
+                              className="px-3 py-1 bg-black text-white text-xs rounded-full font-mono"
                             >
-                              <Award size={16} className="mr-2 mt-1 text-black flex-shrink-0" />
-                              <span>{achievement}</span>
+                              {metric}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Right Column - Key Highlights */}
+                      <div className="lg:col-span-1">
+                        <h4 className="font-semibold text-black mb-2 text-sm">
+                          Key Highlights:
+                        </h4>
+                        <ul className="space-y-1">
+                          {job.highlights.map((highlight, highlightIndex) => (
+                            <li
+                              key={highlightIndex}
+                              className="flex items-start text-sm text-gray-600"
+                            >
+                              <Award size={12} className="mr-2 mt-1 text-black flex-shrink-0" />
+                              <span>{highlight}</span>
                             </li>
                           ))}
                         </ul>

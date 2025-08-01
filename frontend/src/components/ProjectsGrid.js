@@ -2,16 +2,152 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { projects } from '../data/mock';
 import { ExternalLink, ArrowRight } from 'lucide-react';
+import TechIcon from './TechIcon';
 import clsx from 'clsx';
 
 const ProjectsGrid = () => {
+  // Debug: Check if projects data is loaded
+  console.log('ProjectsGrid: projects data length:', projects?.length);
+  console.log('Projects data:', projects);
+  
+  // Early return if no projects
+  if (!projects || projects.length === 0) {
+    return (
+      <section className="py-24 bg-black relative overflow-hidden">
+        <div className="container mx-auto px-4 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold text-white mb-8">Featured Projects</h2>
+          <p className="text-gray-400">Loading projects...</p>
+        </div>
+      </section>
+    );
+  }
+
+  // Take only first 6 projects for featured section
+  const featuredProjects = projects.slice(0, 6);
+  console.log('Featured projects:', featuredProjects.map(p => p.title));
+  
+  // Tech icons mapping for projects
+  const techIconMap = {
+    // Programming Languages
+    "Python": "python",
+    "JavaScript": "javascript",
+    "TypeScript": "typescript", 
+    "Go": "go",
+    "Rust": "rust",
+    "Solidity": "Solidity", // Found: Solidity.svg
+    "C++": "cplusplus",
+    "Dart": "dart",
+    "C": "c",
+    "Fortran": "fortran",
+    
+    // Frontend Frameworks
+    "React": "react",
+    "Next.js": "nextjs",
+    "Vue.js": "vuejs",
+    "Three.js": "Three.js", // Found: Three.js.svg
+    "Flutter": "flutter",
+    "React Native": "react",
+    "Angular": "angular",
+    "Svelte": "svelte",
+    
+    // Backend & APIs
+    "Node.js": "nodejs", 
+    "Laravel": "laravel",
+    "FastAPI": "fastapi",
+    "TensorFlow": "TensorFlow", // Found: TensorFlow.svg
+    "PyTorch": "pytorch",
+    "Django": "django",
+    "Flask": "flask",
+    "Express": "express",
+    
+    // Databases
+    "MySQL": "mysql",
+    "PostgreSQL": "postgresql", 
+    "MongoDB": "mongodb",
+    "Redis": "redis",
+    "Firebase": "firebase",
+    "ClickHouse": "clickhouse",
+    "InfluxDB": "influxdb",
+    "SQLite": "sqlite",
+    "Supabase": "supabase",
+    
+    // DevOps & Cloud
+    "Docker": "docker",
+    "Kubernetes": "kubernetes", 
+    "AWS": "amazonwebservices",
+    "Kafka": "apachekafka",
+    "Apache Kafka": "apachekafka",
+    "CUDA": "nvidia",
+    "MPI": "openmpi",
+    
+    // Blockchain & Web3
+    "Web3.js": "web3js",
+    "Web3.py": "python", // Web3.py is a Python library
+    "Ethereum": "ethereum",
+    "Solana": "solana",
+    "Polygon": "polygon",
+    "IPFS": "ipfs",
+    "Anchor Framework": "solana",
+    "Zero-Knowledge": "ethereum", // Use ethereum for ZK proofs
+    "Post-Quantum Crypto": "encrypt", // Use encryption icon
+    
+    // AI & ML
+    "OpenAI GPT": "openai",
+    "Hugging Face": "huggingface",
+    "OpenCV": "opencv",
+    "YOLO": "yolo",
+    "TensorRT": "tensorrt-logo", // Found: tensorrt-logo.svg
+    "NumPy": "numpy",
+    "SciPy": "scipy",
+    "Edge AI": "tensorflow", // Use TensorFlow for Edge AI
+    
+    // Communication & Protocols
+    "WebSocket": "websocket-svgrepo-com", // Found: websocket-svgrepo-com.svg
+    "Socket.io": "Socket.io", // Found: Socket.io.svg
+    "MQTT": "iot", // Use IoT icon for MQTT
+    "WebRTC": "webrtc-svgrepo-com", // Found: webrtc-svgrepo-com.svg
+    "LoRaWAN": "iot", // Use IoT icon for LoRaWAN
+    "WebGL": "webgl-svgrepo-com", // Found: webgl-svgrepo-com.svg
+    
+    // UI & Styling
+    "Bootstrap": "bootstrap",
+    "Tailwind": "tailwindcss",
+    "jQuery": "jquery",
+    "Chart.js": "chartdotjs",
+    "D3.js": "d3dotjs",
+    
+    // Tools & Others
+    "Grafana": "grafana",
+    "Verilog": "verilog",
+    "Qt": "qt",
+    "Tauri": "tauri",
+    "Midtrans": "midtrans",
+    "Stripe": "stripe",
+    "HDF5": "hdf5",
+    "WebGL": "webgl",
+    "OpenCL": "opencl",
+    "libsodium": "libsodium",
+    "Real-time DSP": "waveform", // Use waveform icon for DSP
+    "System APIs": "api", // Use API icon
+    "Payment Gateway": "stripe", // Use Stripe for payment gateway
+    "Push Notifications": "notification", // Use notification icon
+    "SEO Tools": "search", // Use search icon
+    "Google Fit API": "googlefit", // Google Fit icon
+    "TailwindCSS": "tailwindcss",
+    "Vite": "vite"
+  };
+  
+  const getTechIcon = (techName) => {
+    return techIconMap[techName] || "code"; // Fallback to generic code icon
+  };
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.2,
+        duration: 0.2, // Even faster
+        staggerChildren: 0.05, // Much quicker stagger
+        delayChildren: 0, // No delay
       },
     },
   };
@@ -19,17 +155,14 @@ const ProjectsGrid = () => {
   const itemVariants = {
     hidden: { 
       opacity: 0, 
-      y: 30,
-      scale: 0.95,
+      y: 10, // Minimal movement
     },
     visible: {
       opacity: 1,
       y: 0,
-      scale: 1,
       transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 12,
+        duration: 0.3, // Quick animation
+        ease: "easeOut",
       },
     },
   };
@@ -42,8 +175,11 @@ const ProjectsGrid = () => {
       'mid-purple': 'bg-purple-500 text-white',
       'light-yellow': 'bg-yellow-200 text-black',
       'mid-orange': 'bg-orange-500 text-white',
+      'white': 'bg-white text-black', // Add white mapping
     };
-    return colorMap[bgColor] || 'bg-gray-100 text-black';
+    const style = colorMap[bgColor] || 'bg-white text-black'; // Fallback to white
+    console.log(`Card style for ${bgColor}:`, style);
+    return style;
   };
 
   return (
@@ -62,14 +198,10 @@ const ProjectsGrid = () => {
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-        >
+        {/* Try fallback without motion first */}
+        <div className="opacity-100">
           {/* Section Header */}
-          <motion.div variants={itemVariants} className="text-center mb-16">
+          <div className="text-center mb-16">
             <h2 className="text-5xl lg:text-7xl font-display font-bold text-white mb-6">
               Featured Projects
             </h2>
@@ -77,28 +209,35 @@ const ProjectsGrid = () => {
               Real client projects that delivered results and exceeded expectations
             </p>
             <div className="w-24 h-1 bg-white mx-auto mt-6"></div>
-          </motion.div>
+          </div>
 
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <motion.div
-                key={project.id}
-                variants={itemVariants}
-                whileHover={{ 
-                  y: -4, // Reduced hover effect since not clickable
-                  transition: { duration: 0.2 } 
-                }}
-                className={clsx(
-                  'project-card rounded-lg p-6 h-full flex flex-col justify-between overflow-hidden relative', // Removed cursor-pointer and group
-                  getCardStyles(project.bgColor)
-                )}
-              >
-                {/* Background Pattern */}
-                <div className="absolute inset-0 opacity-10">
-                  <div className="absolute top-4 right-4 w-16 h-16 border border-current rounded-full"></div>
-                  <div className="absolute bottom-4 left-4 w-8 h-8 bg-current rounded-full"></div>
-                </div>
+            {featuredProjects.map((project, index) => {
+              console.log(`Rendering featured project ${index + 1}:`, project.title);
+              
+              // Check if project has required fields
+              if (!project.title || !project.description || !project.technologies) {
+                console.error(`Project ${index + 1} missing required fields:`, project);
+                return null;
+              }
+              
+              return (
+                <div
+                  key={project.id}
+                  className={clsx(
+                    'project-card rounded-lg p-6 h-full flex flex-col justify-between overflow-hidden relative transition-transform duration-200 hover:transform hover:-translate-y-1', 
+                    getCardStyles(project.bgColor)
+                  )}
+                >
+                  {/* Background Pattern with Tech Icon */}
+                  <div className="absolute top-4 right-4 opacity-10">
+                    <TechIcon 
+                      name={getTechIcon(project.technologies[0])} 
+                      size={40} 
+                      className="text-current" 
+                    />
+                  </div>
 
                 <div className="relative z-10">
                   {/* Project Header */}
@@ -122,20 +261,22 @@ const ProjectsGrid = () => {
                     </div>
                   </div>
 
-                  {/* Technologies */}
+                  {/* Technologies with Icons */}
                   <div className="mb-4">
-                    <div className="flex flex-wrap gap-2">
-                      {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                        <span 
-                          key={techIndex}
-                          className="px-2 py-1 text-xs font-mono uppercase tracking-wider rounded-full border border-current opacity-80"
-                        >
-                          {tech}
-                        </span>
+                    <div className="flex flex-wrap gap-3">
+                      {project.technologies.slice(0, 4).map((tech, techIndex) => (
+                        <div key={techIndex} className="flex items-center gap-1.5 px-2 py-1 text-xs font-mono uppercase tracking-wider rounded-full border border-current opacity-80 bg-white/20 backdrop-blur-sm">
+                          <TechIcon 
+                            name={getTechIcon(tech)} 
+                            size={12} 
+                            className="text-current flex-shrink-0" 
+                          />
+                          <span>{tech}</span>
+                        </div>
                       ))}
-                      {project.technologies.length > 3 && (
+                      {project.technologies.length > 4 && (
                         <span className="px-2 py-1 text-xs font-mono opacity-60">
-                          +{project.technologies.length - 3}
+                          +{project.technologies.length - 4}
                         </span>
                       )}
                     </div>
@@ -154,25 +295,21 @@ const ProjectsGrid = () => {
                     </div>
                   </div>
                 </div>
-              </motion.div>
-            ))}
+              </div>
+              );
+            })}
           </div>
 
           {/* View Projects Page Button */}
-          <motion.div 
-            variants={itemVariants}
-            className="text-center mt-12"
-          >
-            <motion.a
+          <div className="text-center mt-12">
+            <a
               href="/projects"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
               className="inline-block px-8 py-4 border border-white text-white font-mono uppercase text-sm tracking-wider rounded-full hover:bg-white hover:text-black transition-all duration-200"
             >
               View All Projects
-            </motion.a>
-          </motion.div>
-        </motion.div>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

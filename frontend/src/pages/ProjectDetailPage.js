@@ -3,11 +3,12 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import TechIcon from '../components/TechIcon';
 import { projects } from '../data/mock';
 import { ArrowLeft, ExternalLink, Calendar, Users, TrendingUp } from 'lucide-react';
 import clsx from 'clsx';
 
-const ProjectPage = () => {
+const ProjectDetailPage = () => {
   const { id } = useParams();
   const project = projects.find(p => p.id === parseInt(id));
 
@@ -138,11 +139,13 @@ const ProjectPage = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <h4 className="font-semibold text-black mb-3">Core Technologies</h4>
-                      <div className="space-y-2">
+                      <div className="space-y-3">
                         {project.technologies.map((tech, index) => (
-                          <div key={index} className="flex items-center">
-                            <div className="w-2 h-2 bg-black rounded-full mr-3"></div>
-                            <span className="text-gray-700">{tech}</span>
+                          <div key={index} className="flex items-center group">
+                            <div className="w-8 h-8 flex items-center justify-center mr-3 bg-white rounded-lg shadow-sm group-hover:shadow-md transition-shadow">
+                              <TechIcon name={tech} size={20} />
+                            </div>
+                            <span className="text-gray-700 font-medium">{tech}</span>
                           </div>
                         ))}
                       </div>
@@ -245,4 +248,4 @@ const ProjectPage = () => {
   );
 };
 
-export default ProjectPage;
+export default ProjectDetailPage;

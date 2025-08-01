@@ -1,9 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { services } from '../data/mock';
-import { Code, Smartphone, ShoppingCart, Settings, ArrowRight } from 'lucide-react';
+import { Code, Smartphone, ShoppingCart, Settings, ArrowRight, MessageCircle } from 'lucide-react';
+import TechIcon from './TechIcon';
 
 const ServicesSection = () => {
+  // Debug: Check if services data is loaded
+  console.log('ServicesSection: services data loaded:', services);
+  console.log('ServicesSection: services length:', services?.length);
+  
+  // WhatsApp integration
+  const getWhatsAppLink = (serviceName) => {
+    const phoneNumber = "6590957469"; // +65 9095 7469
+    const message = `Hi Allen! I'm interested in your "${serviceName}" service. Can we discuss my project requirements?`;
+    return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  };
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -28,10 +40,14 @@ const ServicesSection = () => {
   };
 
   const serviceIcons = {
-    "Code": Code,
-    "Smartphone": Smartphone,
-    "ShoppingCart": ShoppingCart,
-    "Settings": Settings
+    "AI & Machine Learning Solutions": "machine-learning",
+    "Blockchain & Web3 Development": "bitcoin-svgrepo-com", 
+    "E-commerce & Business Systems": "ecommerce",
+    "IoT & Advanced Web Technologies": "iot",
+    "Mobile App Development": "mobile",
+    "Web Development & CMS": "cms",
+    "API Development & Integration": "api",
+    "DevOps & Cloud Solutions": "agile" // using agile as fallback for DevOps
   };
 
   return (
@@ -47,7 +63,7 @@ const ServicesSection = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }} // Reduced from 0.3 for better mobile detection
           className="max-w-6xl mx-auto"
         >
           {/* Section Header */}
@@ -63,10 +79,11 @@ const ServicesSection = () => {
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => {
-              const IconComponent = serviceIcons[service.icon] || Code;
-              
-              return (
+            {services && services.length > 0 ? (
+              services.map((service, index) => {
+                const iconName = serviceIcons[service.title] || "Code";
+                
+                return (
                 <motion.div
                   key={index}
                   variants={itemVariants}
@@ -74,17 +91,18 @@ const ServicesSection = () => {
                     y: -8,
                     transition: { duration: 0.2 } 
                   }}
+                  onClick={() => window.open(getWhatsAppLink(service.title), '_blank')}
                   className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer relative overflow-hidden"
                 >
                   {/* Background Pattern */}
                   <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
-                    <IconComponent size={48} className="text-black" />
+                    <TechIcon name={iconName} size={48} className="text-gray-600" />
                   </div>
 
                   <div className="relative z-10">
                     {/* Service Icon */}
-                    <div className="w-16 h-16 bg-black text-white rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gray-800 transition-colors duration-300">
-                      <IconComponent size={24} />
+                    <div className="w-16 h-16 bg-white border-2 border-gray-200 text-black rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gray-50 group-hover:border-gray-300 transition-all duration-300">
+                      <TechIcon name={iconName} size={24} className="text-black" />
                     </div>
 
                     {/* Service Info */}
@@ -106,7 +124,12 @@ const ServicesSection = () => {
                   </div>
                 </motion.div>
               );
-            })}
+            })
+            ) : (
+              <div className="col-span-full text-center text-gray-500 p-8">
+                <p>Loading services...</p>
+              </div>
+            )}
           </div>
 
           {/* Process Section */}
@@ -150,24 +173,28 @@ const ServicesSection = () => {
               <h3 className="text-2xl lg:text-3xl font-display font-bold mb-4">
                 Ready to Start Your Project?
               </h3>
-              <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+              <p className="text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
                 Let's discuss your breakthrough idea and build something that pushes technological boundaries together.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <motion.button
+                <motion.a
+                  href="/contact"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-white text-black font-mono uppercase text-sm tracking-wider rounded-full hover:bg-gray-200 transition-colors duration-200"
+                  className="inline-block px-8 py-4 border border-white text-white font-mono uppercase text-sm tracking-wider rounded-full hover:bg-white hover:text-black transition-colors duration-200"
+                  style={{ pointerEvents: 'auto' }}
                 >
                   Get In Touch
-                </motion.button>
-                <motion.button
+                </motion.a>
+                <motion.a
+                  href="/projects"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 border border-white text-white font-mono uppercase text-sm tracking-wider rounded-full hover:bg-white hover:text-black transition-colors duration-200"
+                  className="inline-block px-8 py-4 border border-white text-white font-mono uppercase text-sm tracking-wider rounded-full hover:bg-white hover:text-black transition-colors duration-200"
+                  style={{ pointerEvents: 'auto' }}
                 >
                   View Portfolio
-                </motion.button>
+                </motion.a>
               </div>
             </div>
           </motion.div>

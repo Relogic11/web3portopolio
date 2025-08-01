@@ -61,9 +61,6 @@ touch .env
 ```env
 # For development
 WDS_SOCKET_PORT=3000
-
-# If you plan to add backend later
-# REACT_APP_BACKEND_URL=http://localhost:8001
 ```
 
 ## 🚀 Running the Application
@@ -121,8 +118,7 @@ portfolio-website/
 │   ├── 📄 tailwind.config.js # Tailwind CSS configuration
 │   ├── 📄 .env               # Environment variables
 │   └── 📄 yarn.lock          # Yarn lock file
-├── 📁 backend/               # Backend (for future use)
-├── 📄 README.md             # This installation guide
+├──  README.md             # This installation guide
 └── 📄 .gitignore            # Git ignore rules
 ```
 
