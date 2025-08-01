@@ -31,10 +31,12 @@ You **MUST** enable GitHub Pages in your repository settings **BEFORE** the work
 - ✅ Removed the Setup Pages step that was causing the error
 - ✅ Simplified the workflow to work with manual Pages setup
 - ✅ Fixed yarn.lock path issues
+- ✅ Updated Node.js to version 20 (required for React Router DOM 7.5.1)
 - ✅ Proper build artifact upload
 
 ## 🚨 Common Issues:
 - **"Not Found" error**: You forgot to enable GitHub Pages in settings first
+- **Node version error**: Fixed - now using Node.js 20
 - **Build fails**: Make sure all your code is committed and pushed
 - **Site not loading**: Wait 5-10 minutes after first deployment
 
