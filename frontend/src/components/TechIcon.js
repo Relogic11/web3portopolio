@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { getTechIconName } from '../data/modules/techMapping';
 
 /**
@@ -20,14 +20,41 @@ const TechIcon = ({
   alt = null,
   ...props 
 }) => {
+  const [imageError, setImageError] = useState(false);
+  
   // Use mapping to get the correct SVG filename
   const iconName = getTechIconName(name);
   
-  // Generate the icon path
-  const iconPath = `/tech-icons/${iconName}.svg`;
+  // Generate the icon path with PUBLIC_URL for GitHub Pages compatibility
+  const iconPath = `${process.env.PUBLIC_URL}/tech-icons/${iconName}.svg`;
   
   // Default alt text
   const altText = alt || `${name} technology icon`;
+  
+  // Handle image load error
+  const handleError = () => {
+    console.warn(`Failed to load icon: ${iconPath}`);
+    setImageError(true);
+  };
+  
+  // Fallback when image fails to load
+  if (imageError) {
+    return (
+      <div
+        className={`flex items-center justify-center bg-gray-200 text-gray-600 text-xs font-bold rounded ${className}`}
+        style={{
+          width: size,
+          height: size,
+          minWidth: size,
+          minHeight: size
+        }}
+        title={altText}
+        {...props}
+      >
+        {name.charAt(0).toUpperCase()}
+      </div>
+    );
+  }
   
   return (
     <img
@@ -35,18 +62,14 @@ const TechIcon = ({
       alt={altText}
       width={size}
       height={size}
-      className={`tech-icon ${className}`}
-      style={{ 
-        width: `${size}px`, 
-        height: `${size}px`,
-        display: 'inline-block',
-        verticalAlign: 'middle'
+      className={`object-contain ${className}`}
+      style={{
+        width: size,
+        height: size,
+        minWidth: size,
+        minHeight: size
       }}
-      onError={(e) => {
-        // Fallback: hide icon if not found
-        e.target.style.display = 'none';
-        console.warn(`Tech icon not found: ${iconPath} for tech: ${name}`);
-      }}
+      onError={handleError}
       {...props}
     />
   );
