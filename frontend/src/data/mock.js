@@ -10,7 +10,7 @@ export const personalInfo = {
   phone: "+65 9095 7469",
   location: "Tanglin, Singapore",
   linkedin: "https://linkedin.com/in/allenelzayn",
-  github: "https://github.com/allenelzayn",
+  github: "https://github.com/0xReLogic",
   website: "https://allenarch.dev"
 };
 

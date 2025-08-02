@@ -2,12 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { personalInfo } from '../data/mock';
-import { Github, Linkedin, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
+import { Github, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
     { icon: Github, href: personalInfo.github, label: 'GitHub' },
-    { icon: Linkedin, href: personalInfo.linkedin, label: 'LinkedIn' },
     { icon: Mail, href: `mailto:${personalInfo.email}`, label: 'Email' },
   ];
 
